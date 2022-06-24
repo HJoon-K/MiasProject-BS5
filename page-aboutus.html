@@ -1,0 +1,753 @@
+
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <title>자동차검사와 정비 딜리벌리는 서비스로 제공합니다</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="케이엠디에스는 쉽고 안전한 최고의 자동차검사대행 기업입니다.">
+		<meta name="keywords" content="자동차검사, 자동차검사소, 자동차검사예약, 자동차종합검사대행,  자동차정기검사대행, 정기검사대행, 자동차검사대행업체, 딜리버리, 서울, 안산, 성남, 용인, 수원, 분당, 성동, 잠실, 송파, 부산, 대구, 구리, 화성, 동탄, 시흥, 고양, 일산, 남양주">
+		<meta property="fb:app_id" content="1934179173460967" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="케이엠디에스는 쉽고 안전한 최고의 자동차검사대행 기업입니다." />
+		<meta property="og:description" content="케이엠디에스는 국내 최대의 자동차검사대행 전문기업입니다." />
+		<meta property="og:image" content="https://m.motorman.co.kr/images/logo/kmds_yellow.png" />
+		<meta property="og:image:width" content="200" />
+		<meta property="og:image:height" content="200" />
+		<meta property="og:url" content="https://m.motorman.co.kr" />
+		<meta property="og:site_name" content="m.motorman.co.kr" />
+		<meta property="site_name" content="m.motorman.co.kr" />
+        <meta name="Version" content="2.0" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="canonical" href="https://m.motomran.co.kr/index.html">
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<!-- Icons -->
+		<link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+		<!-- Slider -->
+		<link rel="stylesheet" href="css/tiny-slider.css"/>
+	<!-- Main Css -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" /><link href="css/colors/default.css" rel="stylesheet" type="text/css" id="theme-opt" />
+	<!-- MOTORMAN CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+
+    </head>
+    <body>
+        <!-- Loader -->
+        <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Loader -->
+		<!-- Navbar STart -->
+
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container">
+                <!-- Logo container-->
+					<a href="/index.html" class="logo">
+						<img src="/images/kmds-logo-dark.png" height="24" class="logo-light-mode" alt="">
+						<img src="/images/kmds-logo-light.png" height="24" class="logo-dark-mode" alt="">
+					</a>
+
+					<div class="menu-extras">
+						<div class="menu-item">
+							<!-- Mobile menu toggle-->
+							<a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+								<div class="lines">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</a>
+							<!-- End mobile menu toggle-->
+						</div>
+					</div>
+
+					<!--Login button Start-->
+					<!--
+					<ul class="buy-button list-inline mb-0">
+						<li class="list-inline-item ps-1 mb-0">
+							<a href="/p2020/orderTestReq.html">
+								<div class="btn btn-primary">예약하기</div>
+							</a>
+						</li>
+					</ul>
+					-->
+
+					<div class="btn-group buy-button list-inline mb-0" style="display: block;position: relative;margin: 0px 10px 26px 10px;height: 18px;" role="group">
+						<button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+							예약하기
+						</button>
+
+						<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+							<li><a class="dropdown-item" href="/p2020/orderTestReq.html"	style="line-height: 2;">검사대행예약</a></li>
+							<li><a class="dropdown-item" href="/p2020/p_visit.html"				style="line-height: 2;">검사소 찾기</a></li>
+						</ul>
+					</div>
+
+					<!--Login button End-->
+
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+                        <li><a href="/index.html" class="sub-menu-item">Home</a></li>
+                        <li><a href="/page-aboutus.html" class="sub-menu-item">KMDS</a></li>
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">자동차검사</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li>
+									<a href="/p2020/orderTestReq.html" class="sub-menu-item">
+										<span class="badge bg-primary"> 선결제할인 </span> 픽업&#38;딜리버리 예약
+									</a>
+								</li>
+                                <li>
+									<a href="/p2020/p_visit.html" class="sub-menu-item">
+										<span class="badge bg-primary"> 선결제할인 </span> 가까운 검사소 찾기
+									</a>
+								</li>
+                                <li>
+									<a href="tel:1577-0266" class="sub-menu-item">
+										<i class="mdi mdi-phone text-danger"></i> 1577-0266 전화문의 / 예약
+									</a>
+								</li>
+                                <li>
+									<a href="/p2020/p_find.html" class="sub-menu-item">예약확인·취소</a>
+								</li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">서비스</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="/page-forcompany.html" class="sub-menu-item">기업·법인고객</a></li>
+                                <li><a href="/page-forpersonal.html" class="sub-menu-item">개인고객</a></li>
+								<li><a href="/page-tagcloud.html" class="sub-menu-item">서비스 포트폴리오</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">커뮤니티</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="/page-blog.html" class="sub-menu-item">Blog</a></li>
+                                <li><a href="/page-faq.html" class="sub-menu-item">Faq</a></li>
+                                <li><a href="/page-contact.html" class="sub-menu-item">Contact</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="/page-reviews.html" class="sub-menu-item"><i class="mdi mdi-heart text-danger"></i>이용후기</a></li>
+
+					<li class="list-inline-item mb-0">	<a href="/page-login.html">		<img alt="네이버로그인" src="/images/icon/naver_square.png" class="me-1 mr-1" style="max-width:18px;">로그인	</a></li>
+
+
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+
+
+
+        <!-- Navbar End -->
+		<!-- Channel Plugin Scripts -->
+		<!-- Channel Plugin Scripts -->
+
+	<!-- 회원 정보 미연동			-->
+	<script>
+	  (function() {
+		var w = window;
+		if (w.ChannelIO) {
+		  return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+		}
+		var d = window.document;
+		var ch = function() {
+		  ch.c(arguments);
+		};
+		ch.q = [];
+		ch.c = function(args) {
+		  ch.q.push(args);
+		};
+		w.ChannelIO = ch;
+		function l() {
+		  if (w.ChannelIOInitialized) {
+			return;
+		  }
+		  w.ChannelIOInitialized = true;
+		  var s = document.createElement('script');
+		  s.type = 'text/javascript';
+		  s.async = true;
+		  s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+		  s.charset = 'UTF-8';
+		  var x = document.getElementsByTagName('script')[0];
+		  x.parentNode.insertBefore(s, x);
+		}
+		if (document.readyState === 'complete') {
+		  l();
+		} else if (window.attachEvent) {
+		  window.attachEvent('onload', l);
+		} else {
+		  window.addEventListener('DOMContentLoaded', l, false);
+		  window.addEventListener('load', l, false);
+		}
+	  })();
+	  ChannelIO('boot', {
+		"pluginKey": "bed69bdb-8df6-4b07-aca3-ed2ebb286346"
+	  });
+	</script>
+
+	<!-- 회원 정보 미연동			-->
+	<!-- End Channel Plugin -->
+		<!-- Channel Plugin Scripts -->
+        <!-- Hero Start -->
+		<!--
+        <section class="bg-half bg-light d-table w-100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="pages-heading">
+                            <h4 class="title"> About us </h4>
+                            <div class="page-next">
+                                <nav aria-label="breadcrumb" class="d-inline-block">
+                                    <ul class="breadcrumb bg-white rounded shadow mb-0">
+                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+        <!-- Hero End -->
+
+		<section class="bg-half-170 bg-light d-table w-100">
+            <div class="container">
+                <div class="row mt-5 justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="pages-heading">
+                            <h4 class="title mb-0"> About us </h4>
+                        </div>
+                    </div>  <!--end col-->
+                </div><!--end row-->
+
+                <div class="position-breadcrumb">
+                    <nav aria-label="breadcrumb" class="d-inline-block">
+                        <ul class="breadcrumb bg-white rounded shadow mb-0 px-4 py-2">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div> <!--end container-->
+        </section>
+
+        <!-- Shape Start -->
+        <div class="position-relative">
+            <div class="shape overflow-hidden text-white">
+                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!--Shape End-->
+
+        <!-- About Start -->
+        <section class="section pb-0">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                        <div class="position-relative">
+                            <img src="images/about.jpg" class="rounded img-fluid mx-auto d-block" alt="">
+                            <div class="play-icon">
+                                <a href="https://serviceapi.nmv.naver.com/flash/convertIframeTag.nhn?vid=907758B349CB592DD8230298BD90FA246E42&outKey=V1249300bc133a6d24fdcbafcf1d7fa02c52541ae387ac12141d6bafcf1d7fa02c525" class="play-btn video-play-icon">
+                                    <i class="mdi mdi-play text-primary rounded-pill bg-white shadow"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-7 col-md-7 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                        <div class="section-title ml-lg-4">
+                            <h4 class="title mb-4">Our Story</h4>
+                            <p class="text-muted">케이엠디에스는 고객에게 Lifetime Car Managed Service 를 가장 쉽고 편리하게 제공하자는 것을 목표로 2018년 8월 설립되었습니다. <br>현재는 자동차검사와 자동차딜리버리서비스를 개인고객과 SMB법인 고객을 대상으로 제공해나가며 그 범위를 확장해나가고 있습니다.<br /></p>
+							<p class="text-muted">케이엠디에스는 설립 후 고객의 유형과 성향에 맞는 IT 플랫폼을 기반으로 개인고객과 해태제과, 토마토렌터카, 비마이카 등 SMB 법인고객을 대상으로 모터맨의 우수한 고객경험을 서비스로 제공하는 회사로 성장해 나가고 있습니다.</p>
+                            <a href="/page-reviews.html" class="btn btn-primary mt-3" target="_blank"> <i class="mdi mdi-chevron-right"></i> 케이엠디에스의 고객경험</a>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="container mt-100 mt-60">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title mb-4 pb-2">
+                            <h4 class="title mb-4">우리를 움직이게 하는 것은</h4>
+                            <p class="text-muted para-desc mx-auto mb-0">제품으로서의 자동차가 아닌 서비스로의 자동차라는 시선에서 <span class="text-primary font-weight-bold">케이엠디에스</span> 의 모든 서비스는 시작되며 자동차서비스의 모든 것은 제공하는 것을 목표로 회사의 포트폴리오를 만들어 가고 있습니다. </p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                        <div class="key-feature d-flex p-3 rounded shadow bg-white">
+                            <div class="icon text-center rounded-pill mr-3">
+                                <i class="mdi mdi-car-multiple text-primary"></i>
+                            </div>
+                            <div class="content mt-2 ms-2">
+                                <h4 class="title mb-0 ">자동차</h4>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                        <div class="key-feature d-flex p-3 rounded shadow bg-white">
+                            <div class="icon text-center rounded-pill mr-3">
+                                <i class="mdi mdi-emoticon-happy-outline text-primary"></i>
+                            </div>
+                            <div class="content mt-2 ms-2">
+                                <h4 class="title mb-0">고객</h4>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                        <div class="key-feature d-flex p-3 rounded shadow bg-white">
+                            <div class="icon text-center rounded-pill mr-3">
+                                <i class="mdi mdi-domain text-primary"></i>
+                            </div>
+                            <div class="content mt-2 ms-2">
+                                <h4 class="title mb-0">파트너</h4>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                        <div class="key-feature d-flex p-3 rounded shadow bg-white">
+                            <div class="icon text-center rounded-pill mr-3">
+                                <i class="mdi mdi-account-multiple-outline text-primary"></i>
+                            </div>
+                            <div class="content mt-2 ms-2">
+                                <h4 class="title mb-0">동료</h4>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                        <div class="key-feature d-flex p-3 rounded shadow bg-white">
+                            <div class="icon text-center rounded-pill mr-3">
+                                <i class="mdi mdi-human-handsup text-primary"></i>
+                            </div>
+                            <div class="content mt-2 ms-2">
+                                <h4 class="title mb-0">열정</h4>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                        <div class="key-feature d-flex p-3 rounded shadow bg-white">
+                            <div class="icon text-center rounded-pill mr-3">
+                                <i class="mdi mdi-coffee text-primary"></i>
+                            </div>
+                            <div class="content mt-2 ms-2">
+                                <h4 class="title mb-0">Work & Life Balance</h4>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+
+
+                </div><!--end row-->
+			<div class="col-12 mt-4 pt-3">
+				<img src="images/job/home1.png" class="img-fluid" alt="">
+			</div>
+			</div><!--end container-->
+        </section><!--end section-->
+        <!-- About End -->
+
+        <!-- Team Start -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="section-title mb-4 pb-2">
+                            <h4 class="title mb-4">모터맨을 만나보세요</h4>
+                            <p class="text-muted para-desc mx-auto mb-0">우리는 <span class="text-primary font-weight-bold">케이엠디에스</span> 를 구성하고 있는 모든 멤버들을 "모터맨"으로 부릅니다. 고객을 위한 서비스를 만들고 제공하는 모터맨을 만나보십시오. </p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-lg-2 col-md-6 mt-4 pt-2">
+                        <div class="team text-center">
+                            <div class="position-relative">
+                                <img src="images/about/hsjung.png" class="img-fluid avatar avatar-ex-large rounded-pill" alt="정헌수" title="정헌수">
+								<ul class="list-unstyled team-icon mb-0 mt-4">
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="btn">눈물많은<br />조폭 스타일</a></li>
+								</ul>
+                                <!--
+								<ul class="list-unstyled social-icon team-icon mb-0 mt-4">
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-facebook" title="Facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-instagram" title="Instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-twitter" title="Twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-google-plus" title="Twitter"></i></a></li>
+                                </ul>
+								-->
+                            </div>
+                            <div class="content pt-3 pb-3">
+                                <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">정 헌 수</a></h5>
+                                <small class="designation text-muted"> 설립자 & 대표이사 </small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-6 mt-4 pt-2">
+                        <div class="team text-center">
+                            <div class="position-relative">
+                                <img src="images/about/hbpark-1.jpg" class="img-fluid avatar avatar-ex-large rounded-pill" alt="박흥배" title="박흥배">
+								<ul class="list-unstyled team-icon mb-0 mt-4">
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="btn">잔소리하는<br />시아버지 스타일</a></li>
+								</ul>
+                                <!--
+								<ul class="list-unstyled social-icon team-icon mb-0 mt-4">
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-facebook" title="Facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-instagram" title="Instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-twitter" title="Twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-google-plus" title="Twitter"></i></a></li>
+                                </ul>
+								-->
+                            </div>
+                            <div class="content pt-3 pb-3">
+                                <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">박 흥 배</a></h5>
+                                <small class="designation text-muted">General Manager</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-6 mt-4 pt-2">
+                        <div class="team text-center">
+                            <div class="position-relative">
+                                <img src="images/about/jojun.jpg" class="img-fluid avatar avatar-ex-large rounded-pill" alt="전진오" title="전진오">
+								<ul class="list-unstyled team-icon mb-0 mt-4">
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="btn">포마드기름 바른<br />구의원 스타일</a></li>
+								</ul>
+                                <!--
+								<ul class="list-unstyled social-icon team-icon mb-0 mt-4">
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-facebook" title="Facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-instagram" title="Instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-twitter" title="Twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-google-plus" title="Twitter"></i></a></li>
+                                </ul>
+								-->
+                            </div>
+                            <div class="content pt-3 pb-3">
+                                <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">전 진 오</a></h5>
+                                <small class="designation text-muted">Sales Manager</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-6 mt-4 pt-2">
+                        <div class="team text-center">
+                            <div class="position-relative">
+                                <img src="images/about/ejkim.jpg" class="img-fluid avatar avatar-ex-large rounded-pill" alt="김은정" title="김은정">
+								<ul class="list-unstyled team-icon mb-0 mt-4">
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="btn">비 오는 날엔<br />머리에 꽃을 꽃고 상담</a></li>
+								</ul>
+                                <!--
+								<ul class="list-unstyled social-icon team-icon mb-0 mt-4">
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-facebook" title="Facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-instagram" title="Instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-twitter" title="Twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-google-plus" title="Twitter"></i></a></li>
+                                </ul>
+								-->
+                            </div>
+                            <div class="content pt-3 pb-3">
+                                <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">김 은 정</a></h5>
+                                <small class="designation text-muted">Operating Manager</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-2 col-md-6 mt-4 pt-2">
+                        <div class="team text-center">
+                            <div class="position-relative">
+                                <img src="images/about/cleaner.jpg" class="img-fluid avatar avatar-ex-large rounded-pill" alt="">
+								<ul class="list-unstyled team-icon mb-0 mt-4">
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="btn">뭐든 빨아들이는<br />마력덩어리</a></li>
+								</ul>
+                                <!--
+								<ul class="list-unstyled social-icon team-icon mb-0 mt-4">
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-facebook" title="Facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-instagram" title="Instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-twitter" title="Twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-google-plus" title="Twitter"></i></a></li>
+                                </ul>
+								-->
+                            </div>
+                            <div class="content pt-3 pb-3">
+                                <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">DEEBOT</a></h5>
+                                <small class="designation text-muted">Cleaning Manager</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-2 col-md-6 mt-4 pt-2">
+                        <div class="team text-center">
+                            <div class="position-relative">
+                                <img src="images/about/barista.png" class="img-fluid avatar avatar-ex-large rounded-pill" alt="">
+								<ul class="list-unstyled team-icon mb-0 mt-4">
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="btn">편의점이<br />우리 회사에 왔다</a></li>
+								</ul>
+                                <!--
+								<ul class="list-unstyled social-icon team-icon mb-0 mt-4">
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-facebook" title="Facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-instagram" title="Instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-twitter" title="Twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-google-plus" title="Twitter"></i></a></li>
+                                </ul>
+								-->
+                            </div>
+                            <div class="content pt-3 pb-3">
+                                <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">VENUSTA</a></h5>
+                                <small class="designation text-muted">Beverage Manager</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="container mt-100 mt-60">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">우리의 채용 시스템은 항상 열려있습니다.</h4>
+                            <p class="text-muted para-desc mx-auto mb-0"><span class="text-primary font-weight-bold">케이엠디에스</span> 의 채용에 관심이 있습니까? 감사합니다! 이력이나 경력·포트폴리오에 대한 정보를 제출하고 인재 풀에 등록하십시오. </p>
+
+                            <div class="mt-3">
+								<a href="javascript:void(0)"class="btn btn-secondary mt-2 mr-2 " data-toggle="tooltip" data-placement="준비중" title="준비중" alt=""> 아직은 기간이 아닙니다 </a>
+                                <a href="http://www.jobkorea.co.kr/Recruit/Co_Read/C/kmds2020" class="btn btn-outline-primary mt-2" target="_blank">채용시스템 바로가기</a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Team End -->
+
+        <!-- Footer Start -->
+ 		        <!-- Footer Start -->
+        <footer class="footer">
+            <!--<div class="d-none d-lg-block py-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <div class="section-title">
+                                <div class="d-flex">
+                                    <i class="uil uil-envelope-star display-4 text-white title-dark"></i>
+                                    <div class="flex-1 ms-md-4 ms-3">
+                                        <h5 class="fw-bold text-light title-dark mb-1">우리와 함께할 파트너를 모십니다</h5>
+                                        <p class="text-white-50 mb-0">
+											궁금하시거나 제안하실 내용이 있으시면 언제나 연락하세요. 우리는언제나 고객과 파트너에 열려 있습니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mt-4 mt-sm-0">
+                            <div class="text-md-end ms-5 ms-sm-0">
+                                <a href="/page-map.html" class="btn btn-primary">제휴·협력 요청</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>--><!--end div-->
+
+            <div class="container d-none d-lg-block">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-py-60 footer-border">
+                            <div class="row">
+                                <div class="col-lg-7 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                                    <a href="index.html" class="logo-footer">
+                                        <img src="/images/logo/kmds_white.png" height="24" alt="">
+                                    </a>
+                                    <p class="mt-4">우리는 고객이 믿을 수 있는 서비스를 안전하게 제공하고자 노력하고 있습니다.</p>
+									<p class="mt-2">
+									상호명 : 주식회사 케이엠디에스 |  <i class="mdi mdi-phone-classic"></i> 고객센터 1577-0266<br/>
+									사업자등록번호:  <a href="#none" class="text-reset" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=8878801103', 'bizCommPop', 'width=750, height=950;');return false;"><i class="mdi mdi-file-certificate-outline"></i> 887-88-01103</a> | 통신판매업신고: 2019-안양동안-1234<br />
+
+									경기도 안양시 동안구 벌말로 126, 3008호 (관양동, 평촌 오비즈타워)<br />대표이사: 정헌수 | 개인정보관리 책임: 박흥배이사 (hbpark@kmds.co.kr)</p>
+                                </div><!--end col-->
+
+                                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h5 class="footer-head">Company</h5>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li>
+											<a href="/page-aboutus.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> About us</a></li>
+                                        <li>
+											<a href="/page-reviews.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 이용후기</a></li>
+                                        <li>
+											<a href="/page-blog.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Blog</a></li>
+                                        <li>
+											<a href="/page-login.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Login</a></li>
+                                    </ul>
+                                </div><!--end col-->
+
+                                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h5 class="footer-head">Usefull Links</h5>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li><a href="/p2020/orderTestReq.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 자동차검사 대행예약</a></li>
+                                        <li><a href="/p2020/p_visit.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 가까운 자동차검사소 찾기</a></li>
+                                        <li><a href="/page-privacy.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 개인정보 처리방침</a></li>
+                                        <li><a href="/page-noticeservice.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 자동차검사안내 처리방침</a></li>
+                                    </ul>
+                                </div><!--end col-->
+
+                            </div><!--end row-->
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="footer-py-30 footer-bar">
+                <div class="container text-center">
+                    <div class="row align-items-center">
+                        <div class="col-sm-6">
+                            <div class="text-sm-start">
+                                <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> 케이엠디에스. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="https://m.motorman.co.kr/" target="javascript:void(0)" class="text-reset">kmds</a>, icon by <a href="https://icons8.kr/" target="_blank" class="text-reset">icons8.com</a>.</p>
+                            </div>
+                        </div><!--end col-->
+
+                        <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+							<!--
+							<ul class="list-unstyled text-sm-end mb-0">
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/master-card.png" class="avatar avatar-ex-sm" title="Master Card" alt=""></a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/visa.png" class="avatar avatar-ex-sm" title="Visa" alt=""></a></li>
+
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/paypal.png" class="avatar avatar-ex-sm" title="Paypal" alt=""></a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/american-ex.png" class="avatar avatar-ex-sm" title="American Express" alt=""></a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/discover.png" class="avatar avatar-ex-sm" title="Discover" alt=""></a></li>
+							</ul>-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </div>
+        </footer><!--end footer-->
+        <!-- Footer End -->
+
+
+        <!-- Footer End -->
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fs-5"><i data-feather="arrow-up" class="fea icon-sm icons align-middle"></i></a>
+        <!-- Back to top -->
+
+        <div id="style-switcher" class="bg-light border p-3 pt-2 pb-2" onclick="toggleSwitcher()">
+            <div>
+                <h6 class="title text-center">고객님의 취향</h6>
+                <ul class="pattern">
+                    <li class="list-inline-item">
+                        <a class="color1" href="javascript: void(0);" onclick="setColor('default')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color2" href="javascript: void(0);" onclick="setColor('green')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color3" href="javascript: void(0);" onclick="setColor('purple')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color4" href="javascript: void(0);" onclick="setColor('red')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color5" href="javascript: void(0);" onclick="setColor('skyblue')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color6" href="javascript: void(0);" onclick="setColor('skobleoff')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color7" href="javascript: void(0);" onclick="setColor('cyan')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color8" href="javascript: void(0);" onclick="setColor('slateblue')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color9" href="javascript: void(0);" onclick="setColor('yellow')"></a>
+                    </li>
+                </ul>
+
+                <h6 class="title text-center pt-3 mb-0 border-top">Theme Option</h6>
+                <ul class="text-center list-unstyled">
+                    <!--
+					<li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary rtl-version t-rtl-light mt-2" onclick="setTheme('style-rtl')">RTL</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary ltr-version t-ltr-light mt-2" onclick="setTheme('style')">LTR</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary dark-rtl-version t-rtl-dark mt-2" onclick="setTheme('style-dark-rtl')">RTL</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary dark-ltr-version t-ltr-dark mt-2" onclick="setTheme('style-dark')">LTR</a></li>
+                    -->
+					<li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-dark dark-version t-dark mt-2" onclick="setTheme('style-dark')">Dark</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-dark light-version t-light mt-2" onclick="setTheme('style')">Light</a></li>
+                </ul>
+				<!--
+                <h6 class="title text-center pt-3 mb-0 border-top">Admin</h6>
+                <ul class="text-center list-unstyled mb-0">
+                    <li><a href="javascript:void(0)" target="_blank" class="btn btn-sm btn-block btn-success mt-2">Admin Dashboard</a></li>
+                </ul>
+				-->
+            </div>
+            <div class="bottom">
+                <a href="javascript: void(0);" class="settings bg-white title-bg-dark shadow d-block"><i class="mdi mdi-cog ms-1 mdi-24px position-absolute mdi-spin text-primary"></i></a>
+            </div>
+        </div>
+        <!-- end Style switcher -->
+
+        <!-- MOTORMAN javascript -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+		<script src="js/motorman/main.js"></script>
+		<script src="js/motorman/common.js"></script>
+
+        <!-- javascript -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- SLIDER -->
+        <script src="js/tiny-slider.js "></script>
+        <!-- Icons -->
+        <script src="js/feather.min.js"></script>
+        <script src="js/unicons-monochrome.js"></script>
+
+        <!-- Switcher -->
+        <script src="js/switcher.js"></script>
+        <script src="js/motorman/setTheme.js"></script>
+
+        <!-- Main Js -->
+        <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+        <script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113408994-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113408994-1');
+</script>
+		<!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "s_3ee505a55f79";
+if(window.wcs) {
+wcs_do();
+}
+</script>		<!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+<script type="text/javascript" src="//wsa.mig-log.com/wsalog.js"> </script>
+<script type="text/javascript">
+wsa.inflow("m.motorman.co.kr");
+wsa_do(wsa);
+</script>    </body>
+</html>

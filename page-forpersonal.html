@@ -1,0 +1,971 @@
+
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <title>케이엠디에스 - 자동차 검사 딜리버리 서비스입니다</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="자동차검사대행 케이엠디에스, 케이엠디에스는 2016년 기준 약 20여만대의 자동차 검사를 대행한 검사대행 전문기업입니다." lang="ko">
+		<meta name="keyword" content="정기검사, 정기검사대행,종합검사,종합검사대행, 렌트카,렌터카,제주렌터카,검사대행,자동차검사대행,수입차 검사대행,세차,세차대행,교통안전공단" lang="ko">
+        <meta name="author" content="" />
+        <meta name="Version" content="2.0" />
+
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="자동차검사대행서비스 케이엠디에스 2.0">
+		<meta property="og:description" content="자동차검사대행은 케이엠디에스, 케이엠디에스는 2016년 기준 약 20여만대의 자동차 검사를 대행한 검사대행 전문기업입니다.">
+		<meta property="og:image" content="">
+		<meta property="og:url" content="https://m.motorman.co.kr">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="canonical" href="https://m.motomran.co.kr/index.html">
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<!-- Icons -->
+		<link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+		<!-- Slider -->
+		<link rel="stylesheet" href="css/tiny-slider.css"/>
+	<!-- Main Css -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" /><link href="css/colors/default.css" rel="stylesheet" type="text/css" id="theme-opt" />
+		<!-- MOTORMAN CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+
+        <!-- Uploader Css -->
+		<!--<link rel="stylesheet" href="css/Uploader/normalize.css"> -->
+		<!--<link rel="stylesheet" href="css/Uploader/skeleton.css"> -->
+		<link rel="stylesheet" href="css/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+		<link rel="stylesheet" href="css/Uploader/drop_uploader.css">
+
+    </head>
+
+    <body>
+        <!-- Loader -->
+        <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Loader -->
+
+		<!-- Navbar STart -->
+
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container">
+                <!-- Logo container-->
+					<a href="/index.html" class="logo">
+						<img src="/images/kmds-logo-dark.png" height="24" class="logo-light-mode" alt="">
+						<img src="/images/kmds-logo-light.png" height="24" class="logo-dark-mode" alt="">
+					</a>
+
+					<div class="menu-extras">
+						<div class="menu-item">
+							<!-- Mobile menu toggle-->
+							<a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+								<div class="lines">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</a>
+							<!-- End mobile menu toggle-->
+						</div>
+					</div>
+
+					<!--Login button Start-->
+					<!--
+					<ul class="buy-button list-inline mb-0">
+						<li class="list-inline-item ps-1 mb-0">
+							<a href="/p2020/orderTestReq.html">
+								<div class="btn btn-primary">예약하기</div>
+							</a>
+						</li>
+					</ul>
+					-->
+
+					<div class="btn-group buy-button list-inline mb-0" style="display: block;position: relative;margin: 0px 10px 26px 10px;height: 18px;" role="group">
+						<button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+							예약하기
+						</button>
+
+						<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+							<li><a class="dropdown-item" href="/p2020/orderTestReq.html"	style="line-height: 2;">검사대행예약</a></li>
+							<li><a class="dropdown-item" href="/p2020/p_visit.html"				style="line-height: 2;">검사소 찾기</a></li>
+						</ul>
+					</div>
+
+					<!--Login button End-->
+
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+                        <li><a href="/index.html" class="sub-menu-item">Home</a></li>
+                        <li><a href="/page-aboutus.html" class="sub-menu-item">KMDS</a></li>
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">자동차검사</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li>
+									<a href="/p2020/orderTestReq.html" class="sub-menu-item">
+										<span class="badge bg-primary"> 선결제할인 </span> 픽업&#38;딜리버리 예약
+									</a>
+								</li>
+                                <li>
+									<a href="/p2020/p_visit.html" class="sub-menu-item">
+										<span class="badge bg-primary"> 선결제할인 </span> 가까운 검사소 찾기
+									</a>
+								</li>
+                                <li>
+									<a href="tel:1577-0266" class="sub-menu-item">
+										<i class="mdi mdi-phone text-danger"></i> 1577-0266 전화문의 / 예약
+									</a>
+								</li>
+                                <li>
+									<a href="/p2020/p_find.html" class="sub-menu-item">예약확인·취소</a>
+								</li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">서비스</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="/page-forcompany.html" class="sub-menu-item">기업·법인고객</a></li>
+                                <li><a href="/page-forpersonal.html" class="sub-menu-item">개인고객</a></li>
+								<li><a href="/page-tagcloud.html" class="sub-menu-item">서비스 포트폴리오</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">커뮤니티</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="/page-blog.html" class="sub-menu-item">Blog</a></li>
+                                <li><a href="/page-faq.html" class="sub-menu-item">Faq</a></li>
+                                <li><a href="/page-contact.html" class="sub-menu-item">Contact</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="/page-reviews.html" class="sub-menu-item"><i class="mdi mdi-heart text-danger"></i>이용후기</a></li>
+
+					<li class="list-inline-item mb-0">	<a href="/page-login.html">		<img alt="네이버로그인" src="/images/icon/naver_square.png" class="me-1 mr-1" style="max-width:18px;">로그인	</a></li>
+
+
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+
+
+
+		<!-- Navbar End -->
+		<!-- Channel Plugin Scripts -->
+		<!-- Channel Plugin Scripts -->
+
+	<!-- 회원 정보 미연동			-->
+	<script>
+	  (function() {
+		var w = window;
+		if (w.ChannelIO) {
+		  return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+		}
+		var d = window.document;
+		var ch = function() {
+		  ch.c(arguments);
+		};
+		ch.q = [];
+		ch.c = function(args) {
+		  ch.q.push(args);
+		};
+		w.ChannelIO = ch;
+		function l() {
+		  if (w.ChannelIOInitialized) {
+			return;
+		  }
+		  w.ChannelIOInitialized = true;
+		  var s = document.createElement('script');
+		  s.type = 'text/javascript';
+		  s.async = true;
+		  s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+		  s.charset = 'UTF-8';
+		  var x = document.getElementsByTagName('script')[0];
+		  x.parentNode.insertBefore(s, x);
+		}
+		if (document.readyState === 'complete') {
+		  l();
+		} else if (window.attachEvent) {
+		  window.attachEvent('onload', l);
+		} else {
+		  window.addEventListener('DOMContentLoaded', l, false);
+		  window.addEventListener('load', l, false);
+		}
+	  })();
+	  ChannelIO('boot', {
+		"pluginKey": "bed69bdb-8df6-4b07-aca3-ed2ebb286346"
+	  });
+	</script>
+
+	<!-- 회원 정보 미연동			-->
+	<!-- End Channel Plugin -->
+		<!-- Channel Plugin Scripts -->
+        <!-- Hero Start -->
+
+		<section class="bg-half-170 pb-0 d-table w-100" style="background: url('/images/home-shape.png')center center;" id="home">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="title-heading">
+                            <img src="/images/logo/kmds_yellow.png" alt="" height="80">
+                            <h3 class="font-weight-bold mt-4 mb-3">케이엠디에스는  <span class="element text-primary" data-elements=" 자동차검사대행을 합니다, 정비딜리버리를 제공합니다, 이동정비서비스를 제공합니다">
+								</span>
+							</h3>
+                            <p class="para-desc text-muted mx-auto" style="font-size: 0.95rem">모터맨의 10년 이상 기업고객을 대상 자동차관리서비스를 <span class="text-primary font-weight-bold">케이엠디에스가</span> 일반 개인고객도 사용할 수 있도록 서비스 포트폴리오를 만들었습니다.</p>
+
+                            <div class="mt-4 pt-2">
+                                 <a herf="javascript:void(0)" class="btn btn-pills btn-primary OpenChat" id="">궁금하신 것이 있다면 언제든 물어보세요</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 px-0">
+                        <div class="live-preview mt-4">
+                            <p class="img-fluid position-relative  border-bottom">&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Start -->
+        <section class="section">
+            <div class="container" id="portfolio">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title mb-4 pb-2">
+                            <h4 class=" mb-4">자동차검사 대행완료 자동차 제조·브랜드</h4>
+                            <p class="text-muted para-desc mb-0"> *2018년 1월 ~ 3월 기준 : <span class="text-primary font-weight-bold"></span></p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-4 pt-2">
+                        <div class="work-container position-relative d-block overflow-hidden rounded bg-light">
+                            <a class="mfp-image d-inline-block" href="images/personal/audi-logo.png" title="">
+                                <img src="images/personal/audi-logo.png" class="img-fluid rounded" alt="work-image">
+                                <div class="overlay-work"></div>
+                            </a>
+                            <div class="content personal-port">
+                                <a href="javascript:void(0)" class="title text-white d-block font-weight-bold">아우디</a>
+
+                            </div>
+
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-4 pt-2">
+                        <div class="work-container position-relative d-block overflow-hidden rounded bg-light">
+                            <a class="mfp-image d-inline-block" href="images/personal/bmw-logo.png" title="">
+                                <img src="images/personal/bmw-logo.png" class="img-fluid rounded" alt="work-image">
+                                <div class="overlay-work"></div>
+                            </a>
+                            <div class="content personal-port">
+                                <a href="javascript:void(0)" class="title text-white d-block font-weight-bold">BMW</a>
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-4 pt-2">
+                        <div class="work-container position-relative d-block overflow-hidden rounded bg-light">
+                            <a class="mfp-image d-inline-block" href="images/personal/cadillac_logo.png" title="">
+                                <img src="images/personal/cadillac_logo.png" class="img-fluid rounded" alt="work-image">
+                                <div class="overlay-work"></div>
+                            </a>
+                            <div class="content personal-port">
+                                <a href="javascript:void(0)" class="title text-white d-block font-weight-bold">캐딜락</a>
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-4 pt-2">
+                        <div class="work-container position-relative d-block overflow-hidden rounded bg-light">
+                            <a class="mfp-image d-inline-block" href="images/personal/ford-logo.png" title="">
+                                <img src="images/personal/ford-logo.png" class="img-fluid rounded" alt="work-image">
+                                <div class="overlay-work"></div>
+                            </a>
+                            <div class="content personal-port">
+                                <a href="javascript:void(0)" class="title text-white d-block font-weight-bold">포드</a>
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-4 pt-2">
+                        <div class="work-container position-relative d-block overflow-hidden rounded bg-light">
+                            <a class="mfp-image d-inline-block" href="images/personal/genesis-logo.png" title="">
+                                <img src="images/personal/genesis-logo.png" class="img-fluid rounded" alt="work-image">
+                                <div class="overlay-work"></div>
+                            </a>
+                            <div class="content personal-port">
+                                <a href="javascript:void(0)" class="title text-white d-block font-weight-bold">제네시스</a>
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-4 pt-2">
+                        <div class="work-container position-relative d-block overflow-hidden rounded bg-light">
+                            <a class="mfp-image d-inline-block" href="images/personal/honda-logo.png" title="">
+                                <img src="images/personal/honda-logo.png" class="img-fluid rounded" alt="work-image">
+                                <div class="overlay-work"></div>
+                            </a>
+                            <div class="content personal-port">
+                                <a href="javascript:void(0)" class="title text-white d-block font-weight-bold">혼다</a>
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-4 pt-2">
+                        <div class="work-container position-relative d-block overflow-hidden rounded bg-light">
+                            <a class="mfp-image d-inline-block" href="images/personal/hyundai-logo.png" title="">
+                                <img src="images/personal/hyundai-logo.png" class="img-fluid rounded" alt="work-image">
+                                <div class="overlay-work"></div>
+                            </a>
+                            <div class="content personal-port">
+                                <a href="javascript:void(0)" class="title text-white d-block font-weight-bold">현대자동차</a>
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-4 pt-2">
+                        <div class="work-container position-relative d-block overflow-hidden rounded bg-light">
+                            <a class="mfp-image d-inline-block" href="images/personal/infiniti-logo.png" title="">
+                                <img src="images/personal/infiniti-logo.png" class="img-fluid rounded" alt="work-image">
+                                <div class="overlay-work"></div>
+                            </a>
+                            <div class="content personal-port">
+                                <a href="javascript:void(0)" class="title text-white d-block font-weight-bold">인피니티</a>
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-4 pt-2">
+                        <div class="work-container position-relative d-block overflow-hidden rounded bg-light">
+                            <a class="mfp-image d-inline-block" href="images/personal/jaguar-logo.png" title="">
+                                <img src="images/personal/jaguar-logo.png" class="img-fluid rounded" alt="work-image">
+                                <div class="overlay-work"></div>
+                            </a>
+                            <div class="content personal-port">
+                                <a href="javascript:void(0)" class="title text-white d-block font-weight-bold">재규어</a>
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-4 pt-2">
+                        <div class="work-container position-relative d-block overflow-hidden rounded bg-light">
+                            <a class="mfp-image d-inline-block" href="images/personal/jeep-logo.png" title="">
+                                <img src="images/personal/jeep-logo.png" class="img-fluid rounded" alt="work-image">
+                                <div class="overlay-work"></div>
+                            </a>
+                            <div class="content personal-port">
+                                <a href="javascript:void(0)" class="title text-white d-block font-weight-bold">지프</a>
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-4 pt-2">
+                        <div class="work-container position-relative d-block overflow-hidden rounded bg-light">
+                            <a class="mfp-image d-inline-block" href="images/personal/kia-log.png" title="">
+                                <img src="images/personal/kia-log.png" class="img-fluid rounded" alt="work-image">
+                                <div class="overlay-work"></div>
+                            </a>
+                            <div class="content personal-port">
+                                <a href="javascript:void(0)" class="title text-white d-block font-weight-bold">기아자동차</a>
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-4 pt-2">
+                        <div class="work-container position-relative d-block overflow-hidden rounded bg-light">
+                            <a class="mfp-image d-inline-block" href="images/personal/landrover-logo.png" title="">
+                                <img src="images/personal/landrover-logo.png" class="img-fluid rounded" alt="work-image">
+                                <div class="overlay-work"></div>
+                            </a>
+                            <div class="content personal-port">
+                                <a href="javascript:void(0)" class="title text-white d-block font-weight-bold">랜드로버</a>
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-4 pt-2">
+                        <div class="work-container position-relative d-block overflow-hidden rounded bg-light">
+                            <a class="mfp-image d-inline-block" href="images/personal/lexus-logo.png" title="">
+                                <img src="images/personal/lexus-logo.png" class="img-fluid rounded" alt="work-image">
+                                <div class="overlay-work"></div>
+                            </a>
+                            <div class="content personal-port">
+                                <a href="javascript:void(0)" class="title text-white d-block font-weight-bold">렉서스</a>
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-4 pt-2">
+                        <div class="work-container position-relative d-block overflow-hidden rounded bg-light">
+                            <a class="mfp-image d-inline-block" href="images/personal/lincoln-logo.png" title="">
+                                <img src="images/personal/lincoln-logo.png" class="img-fluid rounded" alt="work-image">
+                                <div class="overlay-work"></div>
+                            </a>
+                            <div class="content personal-port">
+                                <a href="javascript:void(0)" class="title text-white d-block font-weight-bold">링컨</a>
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-4 pt-2">
+                        <div class="work-container position-relative d-block overflow-hidden rounded bg-light">
+                            <a class="mfp-image d-inline-block" href="images/personal/maserati-logo.png" title="">
+                                <img src="images/personal/maserati-logo.png" class="img-fluid rounded" alt="work-image">
+                                <div class="overlay-work"></div>
+                            </a>
+                            <div class="content personal-port">
+                                <a href="javascript:void(0)" class="title text-white d-block font-weight-bold">마세라티</a>
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-4 pt-2">
+                        <div class="work-container position-relative d-block overflow-hidden rounded bg-light">
+                            <a class="mfp-image d-inline-block" href="images/personal/Mercedes-Benz-logo.png" title="">
+                                <img src="images/personal/Mercedes-Benz-logo.png" class="img-fluid rounded" alt="work-image">
+                                <div class="overlay-work"></div>
+                            </a>
+                            <div class="content personal-port">
+                                <a href="javascript:void(0)" class="title text-white d-block font-weight-bold">메르세데스-벤츠</a>
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-4 pt-2">
+                        <div class="work-container position-relative d-block overflow-hidden rounded bg-light">
+                            <a class="mfp-image d-inline-block" href="images/personal/mini-logo.png" title="">
+                                <img src="images/personal/mini-logo.png" class="img-fluid rounded" alt="work-image">
+                                <div class="overlay-work"></div>
+                            </a>
+                            <div class="content personal-port">
+                                <a href="javsscript:void()" class="title text-white d-block font-weight-bold">미니</a>
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-4 pt-2">
+                        <div class="work-container position-relative d-block overflow-hidden rounded bg-light">
+                            <a class="mfp-image d-inline-block" href="images/personal/mustang-logo.png" title="">
+                                <img src="images/personal/mustang-logo.png" class="img-fluid rounded" alt="work-image">
+                                <div class="overlay-work"></div>
+                            </a>
+                            <div class="content personal-port">
+                                <a href="javsscript:void()" class="title text-white d-block font-weight-bold">포드 머스탱</a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-4 pt-2">
+                        <div class="work-container position-relative d-block overflow-hidden rounded bg-light">
+                            <a class="mfp-image d-inline-block" href="images/personal/nissan-logo.png" title="">
+                                <img src="images/personal/nissan-logo.png" class="img-fluid rounded" alt="work-image">
+                                <div class="overlay-work"></div>
+                            </a>
+                            <div class="content personal-port">
+                                <a href="javsscript:void()" class="title text-white d-block font-weight-bold">닛산</a>
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-4 pt-2">
+                        <div class="work-container position-relative d-block overflow-hidden rounded bg-light">
+                            <a class="mfp-image d-inline-block" href="images/personal/samsung-logo.png" title="">
+                                <img src="images/personal/samsung-logo.png" class="img-fluid rounded" alt="work-image">
+                                <div class="overlay-work"></div>
+                            </a>
+                            <div class="content personal-port">
+                                <a href="javsscript:void()" class="title text-white d-block font-weight-bold">르노삼성</a>
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-4 pt-2">
+                        <div class="work-container position-relative d-block overflow-hidden rounded bg-light">
+                            <a class="mfp-image d-inline-block" href="images/personal/shevrolet-logo.png" title="">
+                                <img src="images/personal/shevrolet-logo.png" class="img-fluid rounded" alt="work-image">
+                                <div class="overlay-work"></div>
+                            </a>
+                            <div class="content personal-port">
+                                <a href="javsscript:void()" class="title text-white d-block font-weight-bold">쉐보레</a>
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-4 pt-2">
+                        <div class="work-container position-relative d-block overflow-hidden rounded bg-light">
+                            <a class="mfp-image d-inline-block" href="images/personal/ssangyong-logo.png" title="">
+                                <img src="images/personal/ssangyong-logo.png" class="img-fluid rounded" alt="work-image">
+                                <div class="overlay-work"></div>
+                            </a>
+                            <div class="content personal-port">
+                                <a href="javsscript:void()" class="title text-white d-block font-weight-bold">쌍용</a>
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-4 pt-2">
+                        <div class="work-container position-relative d-block overflow-hidden rounded bg-light">
+                            <a class="mfp-image d-inline-block" href="images/personal/volvo-logo.png" title="">
+                                <img src="images/personal/volvo-logo.png" class="img-fluid rounded" alt="work-image">
+                                <div class="overlay-work"></div>
+                            </a>
+                            <div class="content personal-port">
+                                <a href="javsscript:void()" class="title text-white d-block font-weight-bold">볼보</a>
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 mt-4 pt-2">
+                        <div class="work-container position-relative d-block overflow-hidden rounded bg-light">
+                            <a class="mfp-image d-inline-block" href="images/personal/ww-logo.png" title="">
+                                <img src="images/personal/ww-logo.png" class="img-fluid rounded" alt="work-image">
+                                <div class="overlay-work"></div>
+                            </a>
+                            <div class="content personal-port">
+                                <a href="javsscript:void()" class="title text-white d-block font-weight-bold">폭스바겐</a>
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+		</section>
+        <section class="section bg-light border-bottom">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title mb-4 pb-2">
+                            <h4 class="title mb-4">Work Process</h4>
+                            <p class="text-muted para-desc mx-auto mb-0"> <span class="text-primary font-weight-bold">모터맨</span> 의 자동차검사대행은 검사대행예약으로 시작됩니다. 예약은 무료이며 픽업부터 검사 후 차량을 고객님께 안전하게 인도하기 까지 약 2시간 가량 소요될 수 있습니다.</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-md-3 mt-4 pt-2">
+                        <div class="work-process p-lg-4 p-3 rounded shadow">
+                            <h4 class="title">픽업예약</h4>
+                            <p class="text-muted para">자동차검사나 정비를 위해 사전에 고객님과 픽업을 위한 일정을 예약합니다. 예약에 소요되는 비용은 없습니다.</p>
+                            <a href="/p2020/orderTestReq.html" class="text-primary">무료 예약하기 <i class="mdi mdi-chevron-right"></i></a>
+                            <ul class="list-unstyled mb-0 mt-2">
+                                <li class="step-icon float-right"><i class="mdi mdi-chevron-double-right"></i></li>
+                                <li class="step font-weight-bold">Step 1.</li>
+                            </ul>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-md-3 mt-4 pt-2">
+                        <div class="work-process p-lg-4 p-3 rounded shadow">
+                            <h4 class="title">픽업</h4>
+                            <p class="text-muted para">예약된 날짜에 배정된 매니저가 고객님과 약속된 픽업 주소지로 방문해 차량을 픽업하고 검사소로 이동합니다.</p>
+                            <a href="javascript:void(0)" class="text-primary OpenChat">문의하기 <i class="mdi mdi-chevron-right"></i></a>
+                            <ul class="list-unstyled mb-0 mt-2">
+                                <li class="step-icon float-right"><i class="mdi mdi-chevron-double-right"></i></li>
+                                <li class="step font-weight-bold">Step 2.</li>
+                            </ul>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-md-3 mt-4 pt-2">
+                        <div class="work-process p-lg-4 p-3 rounded shadow">
+                            <h4 class="title">검사진행</h4>
+                            <p class="text-muted para">자동차검사를 진행합니다. 검사진행 중 부적합 사항이 발생되는 경우 고객님과 협의하여 정비를 진행할 수 있습니다.</p>
+                            <a href="javascript:void(0)" class="text-primary OpenChat">문의하기 <i class="mdi mdi-chevron-right"></i></a>
+                            <ul class="list-unstyled mb-0 mt-2">
+                                <li class="step-icon float-right"><i class="mdi mdi-chevron-double-right"></i></li>
+                                <li class="step font-weight-bold">Step 3.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-4 pt-2">
+                        <div class="work-process p-lg-4 p-3 rounded shadow">
+                            <h4 class="title">딜리버리 & 결제</h4>
+                            <p class="text-muted para">검사가 완료된 후 픽업 주소지로 차량을 다시 인도해드리고, 신용카드 또는 무통장입금으로 결제하시면 됩니다.</p>
+                            <a href="javascript:void(0)" class="text-primary OpenChat">문의하기 <i class="mdi mdi-chevron-right"></i></a>
+                            <ul class="list-unstyled mb-0 mt-2">
+                                <li class="step-icon float-right"><i class="mdi mdi-check-all"></i></li>
+                                <li class="step font-weight-bold">Step 4.</li>
+                            </ul>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <section class="section border-bottom">
+            <div class="container">
+                        <div class="mt-4 pt-2 p-4 shadow rounded">
+                            <h4 class="page-title pb-3">고객문의 :</h4>
+                                <form id="submitReqForm" class="mt-4" method="post" action="#" role="form">
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group position-relative">
+                                            <label>이름 <span class="text-danger">*</span></label>
+                                            <i class="mdi mdi-account ml-3 icons"></i>
+                                            <input id="name" name="name" type="text" placeholder="이름" class="form-control pl-5" required="">
+                                        </div>
+                                    </div><!--end col-->
+
+                                    <div class="col-md-4">
+                                        <div class="form-group position-relative">
+                                            <label>메일 <span class="text-danger">*</span></label>
+                                            <i class="mdi mdi-email ml-3 icons"></i>
+                                            <input id="email" type="email" placeholder="메일" name="email" class="form-control pl-5" required="">
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-md-4">
+                                        <div class="form-group position-relative">
+                                            <label>연락처 <span class="text-danger">*</span></label>
+                                            <i class="mdi mdi-email ml-3 icons"></i>
+                                            <input id="phone" type="phone" placeholder="연락처" name="phone" class="form-control pl-5" required="">
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-md-12">
+                                        <div class="form-group position-relative">
+                                            <label>남기실 말씀</label>
+                                            <i class="mdi mdi-comment-outline ml-3 icons"></i>
+                                            <textarea id="message" placeholder="Your Comment" rows="5" name="message" class="form-control pl-5" required=""></textarea>
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-md-12">
+												<input type="file" multiple name="file[]" data-maxfilesize="10000000" data-count="5" accept="image/*" >
+                                    </div><!--end col-->
+                                    <div class="p-4">
+                                        <div class="custom-control custom-switch">
+                                            <div class="form-group">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch1" onclick="agreeTerm.reqChk();">
+                                                <label class="custom-control-label" for="customSwitch1">문의사항 제출을 위해 이름, 메일, 연락처에 대한 개인정보를 제공하는데 동의합니다</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="send">
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-md-12">
+                                        <div class="send">
+                                        <a herf="javascript:void(0)" class="btn btn-primary w-100" id="submit_request">문의 접수하기</a>
+                                        </div>
+                                    </div><!--end col-->
+                                </div><!--end row-->
+                            </form><!--end form-->
+                        </div>
+                        <!-- Comment Areas End -->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- About End -->
+
+
+        <!-- Footer Start -->
+		        <!-- Footer Start -->
+        <footer class="footer">
+            <!--<div class="d-none d-lg-block py-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <div class="section-title">
+                                <div class="d-flex">
+                                    <i class="uil uil-envelope-star display-4 text-white title-dark"></i>
+                                    <div class="flex-1 ms-md-4 ms-3">
+                                        <h5 class="fw-bold text-light title-dark mb-1">우리와 함께할 파트너를 모십니다</h5>
+                                        <p class="text-white-50 mb-0">
+											궁금하시거나 제안하실 내용이 있으시면 언제나 연락하세요. 우리는언제나 고객과 파트너에 열려 있습니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mt-4 mt-sm-0">
+                            <div class="text-md-end ms-5 ms-sm-0">
+                                <a href="/page-map.html" class="btn btn-primary">제휴·협력 요청</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>--><!--end div-->
+
+            <div class="container d-none d-lg-block">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-py-60 footer-border">
+                            <div class="row">
+                                <div class="col-lg-7 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                                    <a href="index.html" class="logo-footer">
+                                        <img src="/images/logo/kmds_white.png" height="24" alt="">
+                                    </a>
+                                    <p class="mt-4">우리는 고객이 믿을 수 있는 서비스를 안전하게 제공하고자 노력하고 있습니다.</p>
+									<p class="mt-2">
+									상호명 : 주식회사 케이엠디에스 |  <i class="mdi mdi-phone-classic"></i> 고객센터 1577-0266<br/>
+									사업자등록번호:  <a href="#none" class="text-reset" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=8878801103', 'bizCommPop', 'width=750, height=950;');return false;"><i class="mdi mdi-file-certificate-outline"></i> 887-88-01103</a> | 통신판매업신고: 2019-안양동안-1234<br />
+
+									경기도 안양시 동안구 벌말로 126, 3008호 (관양동, 평촌 오비즈타워)<br />대표이사: 정헌수 | 개인정보관리 책임: 박흥배이사 (hbpark@kmds.co.kr)</p>
+                                </div><!--end col-->
+
+                                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h5 class="footer-head">Company</h5>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li>
+											<a href="/page-aboutus.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> About us</a></li>
+                                        <li>
+											<a href="/page-reviews.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 이용후기</a></li>
+                                        <li>
+											<a href="/page-blog.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Blog</a></li>
+                                        <li>
+											<a href="/page-login.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Login</a></li>
+                                    </ul>
+                                </div><!--end col-->
+
+                                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h5 class="footer-head">Usefull Links</h5>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li><a href="/p2020/orderTestReq.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 자동차검사 대행예약</a></li>
+                                        <li><a href="/p2020/p_visit.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 가까운 자동차검사소 찾기</a></li>
+                                        <li><a href="/page-privacy.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 개인정보 처리방침</a></li>
+                                        <li><a href="/page-noticeservice.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 자동차검사안내 처리방침</a></li>
+                                    </ul>
+                                </div><!--end col-->
+
+                            </div><!--end row-->
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="footer-py-30 footer-bar">
+                <div class="container text-center">
+                    <div class="row align-items-center">
+                        <div class="col-sm-6">
+                            <div class="text-sm-start">
+                                <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> 케이엠디에스. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="https://m.motorman.co.kr/" target="javascript:void(0)" class="text-reset">kmds</a>, icon by <a href="https://icons8.kr/" target="_blank" class="text-reset">icons8.com</a>.</p>
+                            </div>
+                        </div><!--end col-->
+
+                        <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+							<!--
+							<ul class="list-unstyled text-sm-end mb-0">
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/master-card.png" class="avatar avatar-ex-sm" title="Master Card" alt=""></a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/visa.png" class="avatar avatar-ex-sm" title="Visa" alt=""></a></li>
+
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/paypal.png" class="avatar avatar-ex-sm" title="Paypal" alt=""></a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/american-ex.png" class="avatar avatar-ex-sm" title="American Express" alt=""></a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/discover.png" class="avatar avatar-ex-sm" title="Discover" alt=""></a></li>
+							</ul>-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </div>
+        </footer><!--end footer-->
+        <!-- Footer End -->
+
+
+
+        <!-- Footer End -->
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fs-5"><i data-feather="arrow-up" class="fea icon-sm icons align-middle"></i></a>
+        <!-- Back to top -->
+
+        <!-- Style switcher -->
+        <div id="style-switcher" class="bg-light border p-3 pt-2 pb-2" onclick="toggleSwitcher()">
+            <div>
+                <h6 class="title text-center">고객님의 취향</h6>
+                <ul class="pattern">
+                    <li class="list-inline-item">
+                        <a class="color1" href="javascript: void(0);" onclick="setColor('default')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color2" href="javascript: void(0);" onclick="setColor('green')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color3" href="javascript: void(0);" onclick="setColor('purple')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color4" href="javascript: void(0);" onclick="setColor('red')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color5" href="javascript: void(0);" onclick="setColor('skyblue')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color6" href="javascript: void(0);" onclick="setColor('skobleoff')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color7" href="javascript: void(0);" onclick="setColor('cyan')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color8" href="javascript: void(0);" onclick="setColor('slateblue')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color9" href="javascript: void(0);" onclick="setColor('yellow')"></a>
+                    </li>
+                </ul>
+
+                <h6 class="title text-center pt-3 mb-0 border-top">Theme Option</h6>
+                <ul class="text-center list-unstyled">
+                    <!--
+					<li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary rtl-version t-rtl-light mt-2" onclick="setTheme('style-rtl')">RTL</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary ltr-version t-ltr-light mt-2" onclick="setTheme('style')">LTR</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary dark-rtl-version t-rtl-dark mt-2" onclick="setTheme('style-dark-rtl')">RTL</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary dark-ltr-version t-ltr-dark mt-2" onclick="setTheme('style-dark')">LTR</a></li>
+                    -->
+					<li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-dark dark-version t-dark mt-2" onclick="setTheme('style-dark')">Dark</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-dark light-version t-light mt-2" onclick="setTheme('style')">Light</a></li>
+                </ul>
+				<!--
+                <h6 class="title text-center pt-3 mb-0 border-top">Admin</h6>
+                <ul class="text-center list-unstyled mb-0">
+                    <li><a href="javascript:void(0)" target="_blank" class="btn btn-sm btn-block btn-success mt-2">Admin Dashboard</a></li>
+                </ul>
+				-->
+            </div>
+            <div class="bottom">
+                <a href="javascript: void(0);" class="settings bg-white title-bg-dark shadow d-block"><i class="mdi mdi-cog ms-1 mdi-24px position-absolute mdi-spin text-primary"></i></a>
+            </div>
+        </div>
+        <!-- end Style switcher -->
+
+        <!-- MOTORMAN javascript -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+		<script src="js/motorman/main.js"></script>
+		<script src="js/motorman/common.js"></script>
+
+        <!-- javascript -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- SLIDER -->
+        <script src="js/tiny-slider.js "></script>
+        <!-- Icons -->
+        <script src="js/feather.min.js"></script>
+        <script src="js/unicons-monochrome.js"></script>
+
+        <!-- Switcher -->
+        <script src="js/switcher.js"></script>
+        <script src="js/motorman/setTheme.js"></script>
+
+
+        <!-- Main Js -->
+        <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+        <script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+        <!-- Contact -->
+        <script src="js/contact.js "></script>
+        <!-- Typed -->
+        <script src="js/typed.js"></script>
+        <script src="js/typed.init.js"></script>
+
+		<!-- MOTORMAN Js	-->
+		<!-- jquery.form.js : file upload에서 사용-->
+		<script src="js/motorman/jquery.form.js"></script>
+        <script src="js/motorman/submit_request.js"></script>
+
+
+		<!-- Image Upload	-->
+		<script src="js/Uploader/drop_uploader.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('input[type=file]').drop_uploader({
+					uploader_text: '파일을 여기로 가져오거나, ',
+					browse_text: '컴퓨터에서 찾으세요',
+					only_one_error_text: 'Only one file allowed',
+					not_allowed_error_text: 'File type is not allowed',
+					big_file_before_error_text: 'Files, bigger than',
+					big_file_after_error_text: 'is not allowed',
+					allowed_before_error_text: 'Only',
+					allowed_after_error_text: 'files allowed',
+					browse_css_class: 'btn btn-primary',
+					browse_css_selector: 'file_browse',
+					uploader_icon: '<i class="pe-7s-cloud-upload"></i>',
+					file_icon: '<i class="pe-7s-file"></i>',
+					progress_color: '#4a90e2',
+					time_show_errors: 5,
+					layout: 'thumbnails',
+					method: 'normal',
+					url: 'ajax_upload.php',
+					delete_url: 'ajax_delete.php',
+				});
+			});
+		</script>
+
+		<!-- Channel Plugin Scripts -->
+		<script>
+		// Channel Plugin Scripts -->
+			$('.OpenChat').click(function(){
+				ChannelIO('show');
+				//ChannelIO('lounge');
+			});
+
+			ChannelIO('onShow', function() {
+				//alert("감사합니다");
+			});
+		// End Channel Plugin -->
+		</script>
+		<!-- End Channel Plugin -->
+		<!-- Modal Content Start -->
+		<div class="modal fade" id="req_confirmation-modal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content text-center">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">Contact US</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body px-md-4 px-lg-5 pb-4 pb-lg-5">
+                        <img src="images/illustrator/Mobile_notification_SVG.svg" alt="">
+						<h5 class="h3" id="submit_title"></h5>
+						<div class="send">
+							<span id="submit_result"></span>
+						</div>
+					</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal Content End -->
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113408994-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113408994-1');
+</script>
+		<!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "s_3ee505a55f79";
+if(window.wcs) {
+wcs_do();
+}
+</script>		<!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+<script type="text/javascript" src="//wsa.mig-log.com/wsalog.js"> </script>
+<script type="text/javascript">
+wsa.inflow("m.motorman.co.kr");
+wsa_do(wsa);
+</script>    </body>
+</html>

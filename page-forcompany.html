@@ -1,0 +1,916 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>케이엠디에스 - 자동차 딜리버리 서비스입니다</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="자동차검사대행은 케이엠디에스, 케이엠디에스는 2016년 기준 약 20여만대의 자동차 검사를 대행한 검사대행 전문기업입니다.." lang="ko">
+		<meta name="keyword" content="정기검사, 정기검사대행,종합검사,종합검사대행, 렌트카,렌터카,제주렌터카,검사대행,자동차검사대행,수입차 검사대행,세차,세차대행,교통안전공단" lang="ko">
+
+        <meta name="author" content="Shreethemes" />
+        <meta name="Version" content="2.0" />
+		<link rel="canonical" href="https://m.motorman.co.kr/">
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="canonical" href="https://m.motomran.co.kr/index.html">
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<!-- Icons -->
+		<link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+		<!-- Slider -->
+		<link rel="stylesheet" href="css/tiny-slider.css"/>
+	<!-- Main Css -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" /><link href="css/colors/default.css" rel="stylesheet" type="text/css" id="theme-opt" />
+		<!-- MOTORMAN CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+    </head>
+
+    <body>
+        <!-- Loader -->
+        <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Loader -->
+
+		<!-- Navbar STart -->
+
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container">
+                <!-- Logo container-->
+					<a href="/index.html" class="logo">
+						<img src="/images/kmds-logo-dark.png" height="24" class="logo-light-mode" alt="">
+						<img src="/images/kmds-logo-light.png" height="24" class="logo-dark-mode" alt="">
+					</a>
+
+					<div class="menu-extras">
+						<div class="menu-item">
+							<!-- Mobile menu toggle-->
+							<a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+								<div class="lines">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</a>
+							<!-- End mobile menu toggle-->
+						</div>
+					</div>
+
+					<!--Login button Start-->
+					<!--
+					<ul class="buy-button list-inline mb-0">
+						<li class="list-inline-item ps-1 mb-0">
+							<a href="/p2020/orderTestReq.html">
+								<div class="btn btn-primary">예약하기</div>
+							</a>
+						</li>
+					</ul>
+					-->
+
+					<div class="btn-group buy-button list-inline mb-0" style="display: block;position: relative;margin: 0px 10px 26px 10px;height: 18px;" role="group">
+						<button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+							예약하기
+						</button>
+
+						<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+							<li><a class="dropdown-item" href="/p2020/orderTestReq.html"	style="line-height: 2;">검사대행예약</a></li>
+							<li><a class="dropdown-item" href="/p2020/p_visit.html"				style="line-height: 2;">검사소 찾기</a></li>
+						</ul>
+					</div>
+
+					<!--Login button End-->
+
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+                        <li><a href="/index.html" class="sub-menu-item">Home</a></li>
+                        <li><a href="/page-aboutus.html" class="sub-menu-item">KMDS</a></li>
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">자동차검사</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li>
+									<a href="/p2020/orderTestReq.html" class="sub-menu-item">
+										<span class="badge bg-primary"> 선결제할인 </span> 픽업&#38;딜리버리 예약
+									</a>
+								</li>
+                                <li>
+									<a href="/p2020/p_visit.html" class="sub-menu-item">
+										<span class="badge bg-primary"> 선결제할인 </span> 가까운 검사소 찾기
+									</a>
+								</li>
+                                <li>
+									<a href="tel:1577-0266" class="sub-menu-item">
+										<i class="mdi mdi-phone text-danger"></i> 1577-0266 전화문의 / 예약
+									</a>
+								</li>
+                                <li>
+									<a href="/p2020/p_find.html" class="sub-menu-item">예약확인·취소</a>
+								</li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">서비스</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="/page-forcompany.html" class="sub-menu-item">기업·법인고객</a></li>
+                                <li><a href="/page-forpersonal.html" class="sub-menu-item">개인고객</a></li>
+								<li><a href="/page-tagcloud.html" class="sub-menu-item">서비스 포트폴리오</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">커뮤니티</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="/page-blog.html" class="sub-menu-item">Blog</a></li>
+                                <li><a href="/page-faq.html" class="sub-menu-item">Faq</a></li>
+                                <li><a href="/page-contact.html" class="sub-menu-item">Contact</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="/page-reviews.html" class="sub-menu-item"><i class="mdi mdi-heart text-danger"></i>이용후기</a></li>
+
+					<li class="list-inline-item mb-0">	<a href="/page-login.html">		<img alt="네이버로그인" src="/images/icon/naver_square.png" class="me-1 mr-1" style="max-width:18px;">로그인	</a></li>
+
+
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+
+
+
+		<!-- Navbar End -->
+		<!-- Channel Plugin Scripts -->
+		<!-- Channel Plugin Scripts -->
+
+	<!-- 회원 정보 미연동			-->
+	<script>
+	  (function() {
+		var w = window;
+		if (w.ChannelIO) {
+		  return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+		}
+		var d = window.document;
+		var ch = function() {
+		  ch.c(arguments);
+		};
+		ch.q = [];
+		ch.c = function(args) {
+		  ch.q.push(args);
+		};
+		w.ChannelIO = ch;
+		function l() {
+		  if (w.ChannelIOInitialized) {
+			return;
+		  }
+		  w.ChannelIOInitialized = true;
+		  var s = document.createElement('script');
+		  s.type = 'text/javascript';
+		  s.async = true;
+		  s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+		  s.charset = 'UTF-8';
+		  var x = document.getElementsByTagName('script')[0];
+		  x.parentNode.insertBefore(s, x);
+		}
+		if (document.readyState === 'complete') {
+		  l();
+		} else if (window.attachEvent) {
+		  window.attachEvent('onload', l);
+		} else {
+		  window.addEventListener('DOMContentLoaded', l, false);
+		  window.addEventListener('load', l, false);
+		}
+	  })();
+	  ChannelIO('boot', {
+		"pluginKey": "bed69bdb-8df6-4b07-aca3-ed2ebb286346"
+	  });
+	</script>
+
+	<!-- 회원 정보 미연동			-->
+	<!-- End Channel Plugin -->
+		<!-- Channel Plugin Scripts -->
+
+        <!-- Hero Start -->
+        <section class="bg-half-170  d-table w-100" id="home">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-7">
+                        <div class="title-heading mt-4">
+                            <h3 class="mb-3">고객의 성공이 <span class="text-primary">우리의 성공</span>입니다 </h3>
+                            <p class="para-desc text-muted">우리는 다양한 파트너와 기업, 렌트고객에게 가장 앞선 검사관리와 딜리버리 서비스를 제공하고 있습니다.</p>
+                            <div class="mt-4">
+                                <a href="http://motorman.co.kr" class="btn btn-primary mt-2 mr-2" target="_blank"><i class="mdi mdi-email"></i> 모터맨 살펴보기</a>
+                                <a href="/page-contact.html" class="btn btn-outline-primary mt-2 OpenChat"><i class="mdi mdi-book-outline"></i> 제안요청하기</a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-5 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                        <img src="images/illustrator/Startup_SVG.svg" alt="">
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+        <!-- Partners start -->
+        <section class="pt-5 pb-5 border-bottom border-top">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="images/client/cardoc.png" class="avatar avatar-ex-sm" alt="">
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-2 col-6 text-center">
+                        <img src="images/client/carsuri.png" class="avatar avatar-ex-sm" alt="">
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-2 col-6 text-center mt-4 mt-sm-0">
+                        <img src="images/client/yper.png" class="avatar avatar-ex-sm" alt="">
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-2 col-6 text-center mt-4 mt-sm-0">
+                        <img src="images/client/sk.png" class="avatar avatar-ex-sm" alt="">
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-2 col-6 text-center mt-4 mt-sm-0">
+                        <img src="images/client/lotte.png" class="avatar avatar-ex-sm" alt="">
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-2 col-6 text-center mt-4 mt-sm-0">
+                        <img src="images/client/ht.png" class="avatar avatar-ex-sm" alt="">
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Partners End -->
+
+        <!-- How It Work Start -->
+        <section class="section bg-light border-bottom">
+            <div class="container">
+                                <!-- Job Start -->
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                        <div class="card job-box rounded shadow border-0 overflow-hidden">
+                            <div class="border-bottom">
+                                <div class="position-relative">
+                                    <img src="images/client/company_ht.png" class="img-fluid" alt="">
+                                </div>
+                                <ul class="list-unstyled head mb-0">
+                                    <li class="badge badge-danger badge-pill">기업고객</li>
+                                </ul>
+                            </div>
+
+                            <div class="card-body content position-relative">
+                                <div class="company-detail text-center mt-3">
+                                    <h5 class="mb-0"><a href="page-job-company.html" class="text-dark company-name">해태제과</a></h5>
+                                    <p class="text-muted"><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin" class="video-play-icon text-muted"><i data-feather="map-pin" class="fea icon-sm"></i> 전국, 자동차검사관리 서비스 제공</a></p>
+                                </div>
+                                <div class=" text-center">
+									<p class="">부라보콘, 고향만두, 홈런볼, 오징어땅콩 너무나 익숙한 이름들이 아닌가요</p>
+								</div>
+                                <a href="http://www.ht.co.kr/" target="_blank" class="btn btn-outline-primary btn-block">홈페이지</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card job-box rounded shadow border-0 overflow-hidden">
+                            <div class="border-bottom">
+                                <div class="position-relative">
+                                    <img src="images/client/company_cardoc.jpg" class="img-fluid" alt="">
+                                </div>
+
+                                <ul class="list-unstyled head mb-0">
+                                    <li class="badge badge-danger badge-pill">파트너</li>
+                                </ul>
+                            </div>
+
+                            <div class="card-body content position-relative">
+                                <div class="company-detail text-center mt-3">
+                                    <h5 class="mb-0"><a href="page-job-company.html" class="text-dark company-name">카닥</a></h5>
+                                    <p class="text-muted"><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin" class="video-play-icon text-muted"><i data-feather="map-pin" class="fea icon-sm"></i>   전국, 자동차검사관리 서비스 제공</a></p>
+                                </div>
+                                <div class=" text-center">
+									<p class=" ">200만 운전자의 선택, 카닥. 외장수리부터 엔진오일 교환 예약, 세차, 주유소 탐색까지</p>
+								</div>
+                                <a href="https://www.cardoc.co.kr/" target="_blank" class="btn btn-outline-primary btn-block">홈페이지</a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card job-box rounded shadow border-0 overflow-hidden">
+                            <div class="border-bottom">
+                                <div class="position-relative">
+                                    <img src="images/client/company_teamyper.jpg" class="img-fluid" alt="">
+                                </div>
+
+                                <ul class="list-unstyled head mb-0">
+                                    <li class="badge badge-danger badge-pill">파트너</li>
+                                </ul>
+                            </div>
+
+                            <div class="card-body content position-relative">
+                                <div class="company-detail text-center mt-3">
+                                    <h5 class="mb-0"><a href="page-job-company.html" class="text-dark company-name">와이퍼</a></h5>
+                                    <p class="text-muted"><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin" class="video-play-icon text-muted"><i data-feather="map-pin" class="fea icon-sm"></i> 서울, 세차 딜리버리서비스 제공</a></p>
+                                </div>
+                                <div class=" text-center">
+									<p class=" ">대한민국 1등 세차앱,  차량관리 방법의 변화로 편리하고 행복한 삶을 만들어 갑니다</p>
+								</div>
+                                <a href="https://www.yper.co.kr/" target="_blank" class="btn btn-outline-primary btn-block">홈페이지</a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card job-box rounded shadow border-0 overflow-hidden">
+                            <div class="border-bottom">
+                                <div class="position-relative">
+                                    <img src="images/client/company_cnhpremier.png" class="img-fluid" alt="">
+                                </div>
+
+                                <ul class="list-unstyled head mb-0">
+                                    <li class="badge badge-danger badge-pill">렌트고객</li>
+                                </ul>
+                            </div>
+
+                            <div class="card-body content position-relative">
+                                <div class="company-detail text-center mt-3">
+                                    <h5 class="mb-0"><a href="page-job-company.html" class="text-dark company-name">CNH 프리미어렌탈</a></h5>
+                                    <p class="text-muted"><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin" class="video-play-icon text-muted"><i data-feather="map-pin" class="fea icon-sm"></i> 전국, 자동차검사, 차령관리 서비스 제공</a></p>
+                                </div>
+                                <div class=" text-center">
+									<p class=" ">서울, 인천, 경기 및 대구, 부산, 청주 등 9개 지점을 보유한 전국단위 대여사업자</p>
+								</div>
+                                <a href="http://www.cnhpremier.com/" target="_blank" class="btn btn-outline-primary btn-block">홈페이지</a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card job-box rounded shadow border-0 overflow-hidden">
+                            <div class="border-bottom">
+                                <div class="position-relative">
+                                    <img src="images/client/company_tomato.png" class="img-fluid" alt="">
+                                </div>
+                                <ul class="list-unstyled head mb-0">
+                                    <li class="badge badge-danger badge-pill">렌트고객</li>
+                                </ul>
+                            </div>
+
+                            <div class="card-body content position-relative">
+                                <div class="company-detail text-center mt-3">
+                                    <h5 class="mb-0"><a href="page-job-company.html" class="text-dark company-name">토마토렌트카</a></h5>
+                                    <p class="text-muted"><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin" class="video-play-icon text-muted"><i data-feather="map-pin" class="fea icon-sm"></i> 전국, 자동차검사, 차령관리 서비스 제공</a></p>
+                                </div>
+                                <div class=" text-center">
+									<p class=" ">월렌트 전문기업, 서울.경기 무료배차가능, 합리적인 금액과 완벽한 차량관리</p>
+								</div>
+                                <a href="http://www.tomatorentcar.kr/" target="_blank" class="btn btn-outline-primary btn-block">홈페이지</a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card job-box rounded shadow border-0 overflow-hidden">
+                            <div class="border-bottom">
+                                <div class="position-relative">
+                                    <img src="images/client/company_ucar.png" class="img-fluid" alt="">
+                                </div>
+
+                                <ul class="list-unstyled head mb-0">
+                                    <li class="badge badge-danger badge-pill">렌트고객</li>
+                                </ul>
+                            </div>
+
+                            <div class="card-body content position-relative">
+                                <div class="company-detail text-center mt-3">
+                                    <h5 class="mb-0"><a href="page-job-company.html" class="text-dark company-name">유카</a></h5>
+                                    <p class="text-muted"><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin" class="video-play-icon text-muted"><i data-feather="map-pin" class="fea icon-sm"></i> 전국, 자동차검사, 차령관리 서비스 제공</a></p>
+                                </div>
+                                <div class=" text-center">
+									<p class=" ">KTX 부산역, 울산역, 신경주역, 동대구역, 김천구미역, 대전역, 김해공항, 장기렌트카</p>
+								</div>
+                                <a href="https://www.ucar.co.kr/" target="_blank" class="btn btn-outline-primary btn-block">홈페이지</a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card job-box rounded shadow border-0 overflow-hidden">
+                            <div class="border-bottom">
+                                <div class="position-relative">
+                                    <img src="images/client/company_bemycar.jpg" class="img-fluid" alt="">
+                                </div>
+                                <ul class="list-unstyled head mb-0">
+                                    <li class="badge badge-danger badge-pill">렌트고객</li>
+                                </ul>
+                            </div>
+
+                            <div class="card-body content position-relative">
+                                <div class="company-detail text-center mt-3">
+                                    <h5 class="mb-0"><a href="page-job-company.html" class="text-dark company-name">비마이카</a></h5>
+                                    <p class="text-muted"><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin" class="video-play-icon text-muted"><i data-feather="map-pin" class="fea icon-sm"></i> 전국, 자동차검사, 차령관리 서비스 제공</a></p>
+                                </div>
+                                <div class=" text-center">
+									<p class=" "> 차량공유플랫폼/자동차 대여/주차장 운영/시스템 개발 등 플랫폼운영업</p>
+								</div>
+                                <a href="http://bemycar.co.kr/" target="_blank" class="btn btn-outline-primary btn-block">홈페이지</a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card job-box rounded shadow border-0 overflow-hidden">
+                            <div class="border-bottom">
+                                <div class="position-relative">
+                                    <img src="images/client/company_dreamviewlimo.png" class="img-fluid" alt="">
+                                </div>
+
+                                <ul class="list-unstyled head mb-0">
+                                    <li class="badge badge-danger badge-pill">렌트고객</li>
+                                </ul>
+                            </div>
+
+                            <div class="card-body content position-relative">
+                                <div class="company-detail text-center mt-3">
+                                    <h5 class="mb-0"><a href="page-job-company.html" class="text-dark company-name">드림뷰렌트카</a></h5>
+                                    <p class="text-muted"><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin" class="video-play-icon text-muted"><i data-feather="map-pin" class="fea icon-sm"></i> 전국, 자동차검사, 차령관리 서비스 제공</a></p>
+                                </div>
+                                <div class=" text-center">
+									<p class=" ">웨딩카.리무진.프로포즈.이벤트.에스코트.의전행사 전문</p>
+								</div>
+                                <a href="http://www.dreamviewlimo.com/" target="_blank" class="btn btn-outline-primary btn-block">홈페이지</a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card job-box rounded shadow border-0 overflow-hidden">
+                            <div class="border-bottom">
+                                <div class="position-relative">
+                                    <img src="images/client/company_gmautoland.png" class="img-fluid" alt="">
+                                </div>
+
+                                <ul class="list-unstyled head mb-0">
+                                    <li class="badge badge-danger badge-pill">렌트고객</li>
+                                </ul>
+                            </div>
+
+                            <div class="card-body content position-relative">
+                                <div class="company-detail text-center mt-3">
+                                    <h5 class="mb-0"><a href="page-job-company.html" class="text-dark company-name">굿모닝오토랜드</a></h5>
+                                    <p class="text-muted"><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin" class="video-play-icon text-muted"><i data-feather="map-pin" class="fea icon-sm"></i> 전국, 자동차검사, 차령관리 서비스 제공</a></p>
+                                </div>
+                                <div class=" text-center">
+									<p class=" ">서울시 자동차 대여 사업 조합 등록사로 건설고객 특화 차량 장단기 대여사업 </p>
+								</div>
+                                <a href="http://www.gmautoland.co.kr/" target="_blank" class="btn btn-outline-primary btn-block">홈페이지</a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+
+
+
+                </div>
+                <!-- Job End -->
+            </div><!--end container-->
+
+            <div class="container mt-100 mt-60">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="section-title">
+                            <h4 class="title mb-4">제안을 요청하세요</h4>
+                            <p class="text-muted">자동차관리에 어려움을 겪고 계십니까? 기업의 다양한 요구에 맞는 자동차관리서비스를 제공할 준비가 되어 있습니다. 연락을 받으실 정보만 입력하세요.</p>
+                            <ul class="list-unstyled feature-list text-muted">
+                                <li><i class="mdi mdi-checkbox-marked-circle text-success mdi-18px h5 mr-2"></i>자동차검사관리서비스</li>
+                                <li><i class="mdi mdi-checkbox-marked-circle text-success mdi-18px h5 mr-2"></i>자동차정비 딜리버리이동정비서비스</li>
+                                <li><i class="mdi mdi-checkbox-marked-circle text-success mdi-18px h5 mr-2"></i>모든 서비스 진행과정과 결과를 Online에서 실시간으로 확인하십시오.</li>
+                            </ul>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-5 col-md-6 order-1 order-md-2">
+                        <div class="p-4 rounded bg-white feature-form border ml-lg-5">
+                            <img src="images/illustrator/Mobile_notification_SVG.svg" alt="">
+
+                            <div class="content mt-4 pt-2">
+                                <form id="submitReqForm" class="mt-4" method="post" action="#" role="form">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+
+											<div class="form-floating mb-3">
+											  <input type="text"
+												class="form-control"
+												id="name" name="name"
+												placeholder="">
+											  <label for="name">이름을 입력하세요<span class="text-danger">*</span></label>
+											</div>
+
+											<div class="form-floating mb-3">
+												<input type="email"
+													class="form-control"
+													id="email" name="email"
+													placeholder="name@example.com">
+												<label for="email">이메일<span class="text-danger">*</span></label>
+											</div>
+
+											<div class="form-floating mb-3">
+												<input type="text"
+													class="form-control"
+													id="phone" name="phone"
+													placeholder="">
+												<label for="phone">연락처<span class="text-danger">*</span></label>
+                                                <input
+													type="hidden"
+													class="form-control"
+													placeholder="분류"
+													name="need"
+													value="제안요청">
+											</div>
+
+                                        </div><!--end col-->
+
+                                        <div class="col-lg-12">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="customSwitch1" onclick="agreeTerm.reqChk();">
+												<label class="form-check-label" for="customSwitch1">
+												문의사항 제출을 위해 이름, 메일, 연락처에 대한 개인정보를 제공하는데 동의합니다
+												</label>
+											</div>
+
+                                        </div><!--end col-->
+                                        <div class="col-lg-12 mt-2 mb-0">
+											<a herf="javascript:void(0)" class="btn btn-primary w-100" id="submit_request">제안요청하기</a>
+                                        </div><!--end col-->
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+			<!-- Modal Content Start -->
+			<div class="modal fade" id="req_confirmation-modal" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content text-center">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalCenterTitle">Contact US</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body px-md-4 px-lg-5 pb-4 pb-lg-5">
+							<img src="images/illustrator/Mobile_notification_SVG.svg" alt="">
+							<h5 class="h3" id="submit_title"></h5>
+							<div class="send">
+								<span id="submit_result"></span>
+							</div>
+						</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+					</div>
+				</div>
+			</div>
+			<!-- Modal Content End -->
+        </section><!--end section-->
+        <!-- How It Work End -->
+
+        <!-- Testi Start -->
+        <section class="section">
+            <div class="container">
+                <div class="row mt-lg-4 justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title mb-4 pb-2">
+                            <h4 class="title mb-4">Our Happy Customers</h4>
+                            <p class="text-muted para-desc mx-auto mb-0"> <span class="text-primary font-weight-bold">모터맨</span> 의 서비스를 이용하신 고객님의 Feedback을 확인해보세요.<br />무보정·무편집의 생생함을 전해드립니다.</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-12 mt-4 pt-2">
+                        <div id="customer-testi" class="owl-carousel owl-theme">
+							<div class="customer-testi mr-2 ml-2 text-center p-4 rounded border">	<h6 class="text-primary">니로 하이브리드 ◯◯주2929 고객님</h6>	<p class="text-muted mt-4">"친절하게 잘 해주셨습니다."</p>	<ul class="list-unstyled mb-0 mt-3">		<li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>	</ul>	◯ 방문 매니저님 </div><div class="customer-testi mr-2 ml-2 text-center p-4 rounded border">	<h6 class="text-primary">모닝 ◯◯서6573 고객님</h6>	<p class="text-muted mt-4">"감사합니다."</p>	<ul class="list-unstyled mb-0 mt-3">		<li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>	</ul>	◯ 방문 매니저님 </div><div class="customer-testi mr-2 ml-2 text-center p-4 rounded border">	<h6 class="text-primary">SM5 ◯◯우9300 고객님</h6>	<p class="text-muted mt-4">"수고하셧습니다 ^^"</p>	<ul class="list-unstyled mb-0 mt-3">		<li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>	</ul>	◯ 재호 매니저님 </div><div class="customer-testi mr-2 ml-2 text-center p-4 rounded border">	<h6 class="text-primary">K7 ◯◯주6910 고객님</h6>	<p class="text-muted mt-4">"자동차 종합검사 만족합니다"</p>	<ul class="list-unstyled mb-0 mt-3">		<li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>	</ul>	◯ 방문 매니저님 </div><div class="customer-testi mr-2 ml-2 text-center p-4 rounded border">	<h6 class="text-primary">렉스턴스포츠 ◯◯버2637 고객님</h6>	<p class="text-muted mt-4">"감사합니다 "</p>	<ul class="list-unstyled mb-0 mt-3">		<li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>	</ul>	◯ 방문 매니저님 </div><div class="customer-testi mr-2 ml-2 text-center p-4 rounded border">	<h6 class="text-primary">K7 ◯◯모0508 고객님</h6>	<p class="text-muted mt-4">"오신분이 너무 친절해서 좋았습니다."</p>	<ul class="list-unstyled mb-0 mt-3">		<li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>	</ul>	◯ 혜경 매니저님 </div><div class="customer-testi mr-2 ml-2 text-center p-4 rounded border">	<h6 class="text-primary">로체 ◯◯나9470 고객님</h6>	<p class="text-muted mt-4">"다 오류임"</p>	<ul class="list-unstyled mb-0 mt-3">		<li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>	</ul>	◯ 방문 매니저님 </div><div class="customer-testi mr-2 ml-2 text-center p-4 rounded border">	<h6 class="text-primary">다마스5인승 ◯◯거4511 고객님</h6>	<p class="text-muted mt-4">"..."</p>	<ul class="list-unstyled mb-0 mt-3">		<li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>	</ul>	◯ 희상 매니저님 </div><div class="customer-testi mr-2 ml-2 text-center p-4 rounded border">	<h6 class="text-primary">싼타페(SANTAFE) ◯◯마3139 고객님</h6>	<p class="text-muted mt-4">"대체적으로 만족합니다."</p>	<ul class="list-unstyled mb-0 mt-3">		<li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>	</ul>	◯ 희상 매니저님 </div><div class="customer-testi mr-2 ml-2 text-center p-4 rounded border">	<h6 class="text-primary">베르나(VERNA) ◯◯저5534 고객님</h6>	<p class="text-muted mt-4">"친절하게 해주셔서 넘 좋았습니다:)"</p>	<ul class="list-unstyled mb-0 mt-3">		<li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>		<li class="list-inline-item"><i class="mdi mdi-star text-warning		"></i></li>	</ul>	◯ 희상 매니저님 </div>
+
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+            <div class="container >
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <!--<p class="text-muted para-desc mx-auto mb-0"><span class="text-primary font-weight-bold">motorMan</span> 의 이용후기는 서비스를 이용한 고객에게 발송되는 서비스 만족도의 응답결과를 가공없이 보여드립니다.</p>
+							-->
+                            <div class="mt-3">
+                                <a href="./page-reviews.html" class="btn btn-primary mt-2 mr-2">이용후기 모두보기</a>
+                                <a href="tel:1577-0266" class="btn btn-outline-primary mt-2" onclick="gtag('event', '전화클릭', {'event_category': '모바일전화연결','event_label': 'forcompany-review-bottom'});">서비스 문의하기 1577-0266</a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Testi End -->
+
+
+        <div class="position-relative">
+            <div class="shape overflow-hidden text-light">
+                <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M720 125L2160 0H2880V250H0V125H720Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!-- Pricing End -->
+
+        <!-- FAQ n Contact Start -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="faq-container">
+                            <h4 class="question"><i class="mdi mdi-help-circle text-primary mr-2 h4"></i> 고도의  <span class="text-primary">맞춤형 서비스</span> </h4>
+                            <p class="answer text-muted ml-lg-4 pl-lg-3 mb-0">모터맨의 기업고객서비스는 표준화된 단순함으로 부터 출발하고, 고객의 까다로군 요구에 맞춰 디자인할 수 있도록 준비되어 있습니다. 자동차 보유대수 10만대 이상의 고객과 100대 미만 보유까지 모든 요구사항을 수용할 수 있는 유용한 시스템입니다. </p>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="faq-container">
+                            <h4 class="question"><i class="mdi mdi-help-circle text-primary mr-2 h4"></i> 사업을 시작하거나 확장하고 싶습니까 ?</h4>
+                            <p class="answer text-muted ml-lg-4 pl-lg-3 mb-0">자동차관련 비지니스는 여전히 사람이 주축이 되는 경우가 많습니다. 빠른 성장과 합리적인 비용구조가 필요하십니까? 우리는 고객의 다양한 딜리버리 요구사항을 충족할 준비가 되어 있습니다. 모터맨은 고객에게 막대한 가치를 제공할 수 있습니다.</p>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-md-6 col-12 mt-4 pt-2">
+                        <div class="faq-container">
+                            <h4 class="question"><i class="mdi mdi-help-circle text-primary mr-2 h4"></i> 관리 Application 포함</h4>
+                            <p class="answer text-muted ml-lg-4 pl-lg-3 mb-0">모터맨이 제공하는 서비스는 고객과의 소통을 가장 중요하면서 기본적인 것으로 생각합니다. 모터맨은 고객의 요구를 언제 어디서 어떻게 제공하였는지에 대한 정보를 실시간으로 제공할 수 있는 서비스형 Application을 제공합니다. 물론, 계약에 따라 보고서를 제공할 수도 있습니다. </p>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-md-6 col-12 mt-4 pt-2">
+                        <div class="faq-container">
+                            <h4 class="question"><i class="mdi mdi-help-circle text-primary mr-2 h4"></i> 환상적인 <span class="text-primary">고객지원</span></h4>
+                            <p class="answer text-muted ml-lg-4 pl-lg-3 mb-0">모터맨의 모든 기업고객은 계약에 따라 전담 혹은 담당 직원을 배정받습니다. 이런 직원들을 우리는 Account Manager (AM)라고 부릅니다. 고객은 Account Manager 를 통해 One Stop 으로 요구사항을 전달하고, 그 결과를 Feed Back 할 수 있습니다. Account Manager는 고객의 직원과 같습니다. </p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row my-md-5 pt-md-3 my-4 pt-2 pb-lg-5 mt-sm-0 pt-sm-0 justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">개인고객입니까 ? </h4>
+                            <p class="text-muted para-desc mx-auto"><span class="text-primary font-weight-bold">개인고객</span> 은 지금 바로 간단하게 자동차검사 대행서비스를 예약하실 수 있습니다. 모터맨의 개인고객서비스는 예약을 기반으로 제공되며, 예약에는 비용이 들지 않습니다. 수수료는 모든 서비스가 완료된 후 신용카드로 후불결제를 하십시오. </p>
+                            <a href="/p2020/orderTestReq.html" class="btn btn-primary mt-4"><i class="mdi mdi-pen"></i> 자동차검사 대행서비스 신청하기</a>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <div class="position-relative">
+            <div class="shape overflow-hidden text-footer">
+                <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M720 125L2160 0H2880V250H0V125H720Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!-- FAQ n Contact End -->
+
+        <!-- Footer Start -->
+		        <!-- Footer Start -->
+        <footer class="footer">
+            <!--<div class="d-none d-lg-block py-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <div class="section-title">
+                                <div class="d-flex">
+                                    <i class="uil uil-envelope-star display-4 text-white title-dark"></i>
+                                    <div class="flex-1 ms-md-4 ms-3">
+                                        <h5 class="fw-bold text-light title-dark mb-1">우리와 함께할 파트너를 모십니다</h5>
+                                        <p class="text-white-50 mb-0">
+											궁금하시거나 제안하실 내용이 있으시면 언제나 연락하세요. 우리는언제나 고객과 파트너에 열려 있습니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mt-4 mt-sm-0">
+                            <div class="text-md-end ms-5 ms-sm-0">
+                                <a href="/page-map.html" class="btn btn-primary">제휴·협력 요청</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>--><!--end div-->
+
+            <div class="container d-none d-lg-block">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-py-60 footer-border">
+                            <div class="row">
+                                <div class="col-lg-7 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                                    <a href="index.html" class="logo-footer">
+                                        <img src="/images/logo/kmds_white.png" height="24" alt="">
+                                    </a>
+                                    <p class="mt-4">우리는 고객이 믿을 수 있는 서비스를 안전하게 제공하고자 노력하고 있습니다.</p>
+									<p class="mt-2">
+									상호명 : 주식회사 케이엠디에스 |  <i class="mdi mdi-phone-classic"></i> 고객센터 1577-0266<br/>
+									사업자등록번호:  <a href="#none" class="text-reset" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=8878801103', 'bizCommPop', 'width=750, height=950;');return false;"><i class="mdi mdi-file-certificate-outline"></i> 887-88-01103</a> | 통신판매업신고: 2019-안양동안-1234<br />
+
+									경기도 안양시 동안구 벌말로 126, 3008호 (관양동, 평촌 오비즈타워)<br />대표이사: 정헌수 | 개인정보관리 책임: 박흥배이사 (hbpark@kmds.co.kr)</p>
+                                </div><!--end col-->
+
+                                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h5 class="footer-head">Company</h5>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li>
+											<a href="/page-aboutus.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> About us</a></li>
+                                        <li>
+											<a href="/page-reviews.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 이용후기</a></li>
+                                        <li>
+											<a href="/page-blog.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Blog</a></li>
+                                        <li>
+											<a href="/page-login.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Login</a></li>
+                                    </ul>
+                                </div><!--end col-->
+
+                                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h5 class="footer-head">Usefull Links</h5>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li><a href="/p2020/orderTestReq.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 자동차검사 대행예약</a></li>
+                                        <li><a href="/p2020/p_visit.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 가까운 자동차검사소 찾기</a></li>
+                                        <li><a href="/page-privacy.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 개인정보 처리방침</a></li>
+                                        <li><a href="/page-noticeservice.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 자동차검사안내 처리방침</a></li>
+                                    </ul>
+                                </div><!--end col-->
+
+                            </div><!--end row-->
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="footer-py-30 footer-bar">
+                <div class="container text-center">
+                    <div class="row align-items-center">
+                        <div class="col-sm-6">
+                            <div class="text-sm-start">
+                                <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> 케이엠디에스. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="https://m.motorman.co.kr/" target="javascript:void(0)" class="text-reset">kmds</a>, icon by <a href="https://icons8.kr/" target="_blank" class="text-reset">icons8.com</a>.</p>
+                            </div>
+                        </div><!--end col-->
+
+                        <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+							<!--
+							<ul class="list-unstyled text-sm-end mb-0">
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/master-card.png" class="avatar avatar-ex-sm" title="Master Card" alt=""></a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/visa.png" class="avatar avatar-ex-sm" title="Visa" alt=""></a></li>
+
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/paypal.png" class="avatar avatar-ex-sm" title="Paypal" alt=""></a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/american-ex.png" class="avatar avatar-ex-sm" title="American Express" alt=""></a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/discover.png" class="avatar avatar-ex-sm" title="Discover" alt=""></a></li>
+							</ul>-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </div>
+        </footer><!--end footer-->
+        <!-- Footer End -->
+
+
+        </footer><!--end footer-->
+        <!-- Footer End -->
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fs-5"><i data-feather="arrow-up" class="fea icon-sm icons align-middle"></i></a>
+        <!-- Back to top -->
+
+        <!-- Style switcher -->
+        <div id="style-switcher" class="bg-light border p-3 pt-2 pb-2" onclick="toggleSwitcher()">
+            <div>
+                <h6 class="title text-center">고객님의 취향</h6>
+                <ul class="pattern">
+                    <li class="list-inline-item">
+                        <a class="color1" href="javascript: void(0);" onclick="setColor('default')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color2" href="javascript: void(0);" onclick="setColor('green')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color3" href="javascript: void(0);" onclick="setColor('purple')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color4" href="javascript: void(0);" onclick="setColor('red')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color5" href="javascript: void(0);" onclick="setColor('skyblue')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color6" href="javascript: void(0);" onclick="setColor('skobleoff')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color7" href="javascript: void(0);" onclick="setColor('cyan')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color8" href="javascript: void(0);" onclick="setColor('slateblue')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color9" href="javascript: void(0);" onclick="setColor('yellow')"></a>
+                    </li>
+                </ul>
+
+                <h6 class="title text-center pt-3 mb-0 border-top">Theme Option</h6>
+                <ul class="text-center list-unstyled">
+                    <!--
+					<li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary rtl-version t-rtl-light mt-2" onclick="setTheme('style-rtl')">RTL</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary ltr-version t-ltr-light mt-2" onclick="setTheme('style')">LTR</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary dark-rtl-version t-rtl-dark mt-2" onclick="setTheme('style-dark-rtl')">RTL</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary dark-ltr-version t-ltr-dark mt-2" onclick="setTheme('style-dark')">LTR</a></li>
+                    -->
+					<li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-dark dark-version t-dark mt-2" onclick="setTheme('style-dark')">Dark</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-dark light-version t-light mt-2" onclick="setTheme('style')">Light</a></li>
+                </ul>
+				<!--
+                <h6 class="title text-center pt-3 mb-0 border-top">Admin</h6>
+                <ul class="text-center list-unstyled mb-0">
+                    <li><a href="javascript:void(0)" target="_blank" class="btn btn-sm btn-block btn-success mt-2">Admin Dashboard</a></li>
+                </ul>
+				-->
+            </div>
+            <div class="bottom">
+                <a href="javascript: void(0);" class="settings bg-white title-bg-dark shadow d-block"><i class="mdi mdi-cog ms-1 mdi-24px position-absolute mdi-spin text-primary"></i></a>
+            </div>
+        </div>
+        <!-- end Style switcher -->
+
+        <!-- MOTORMAN javascript -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+		<script src="js/motorman/main.js"></script>
+
+
+        <!-- javascript -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- SLIDER -->
+        <script src="js/tiny-slider.js "></script>
+        <!-- Icons -->
+        <script src="js/feather.min.js"></script>
+        <script src="js/unicons-monochrome.js"></script>
+
+        <!-- Switcher -->
+        <script src="js/switcher.js"></script>
+        <script src="js/motorman/setTheme.js"></script>
+
+        <!-- Main Js -->
+        <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+        <script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+
+		<!-- MOTORMAN Js	-->
+		<!-- jquery.form.js : file upload에서 사용-->
+		<script src="js/motorman/jquery.form.js"></script>
+        <script src="js/motorman/submit_request.js"></script>
+		<script src="js/motorman/common.js"></script>
+
+		<!-- Channel Plugin Scripts -->
+		<script>
+		$(document).ready(function() {
+			$('.OpenChat').click(function(){
+				$('#ch-plugin-launcher').trigger('click');
+			});
+		});
+		</script>
+		<!-- End Channel Plugin -->
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113408994-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113408994-1');
+</script>
+		<!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "s_3ee505a55f79";
+if(window.wcs) {
+wcs_do();
+}
+</script>		<!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+<script type="text/javascript" src="//wsa.mig-log.com/wsalog.js"> </script>
+<script type="text/javascript">
+wsa.inflow("m.motorman.co.kr");
+wsa_do(wsa);
+</script>
+    </body>
+</html>

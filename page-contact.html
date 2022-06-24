@@ -1,0 +1,770 @@
+
+
+<!DOCTYPE html>
+    <html lang="ko">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>케이엠디에스 - kmds 가 만들어 가는 자동차 딜리버리 서비스입니다</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="2017년 기준 전국을 대상으로 연간 15만대의 자동차검사 대행 실적을 보유한 믿을 수 있는 기업 케이엠디에스! 기업과 개인을 대상으로 서비스합니다.">
+		<meta name="keyword" content="자동차검사, 자동차검사대행, 정기검사, 정기검사대행,종합검사,종합검사대행, 렌트카,렌터카,제주렌터카,검사대행,자동차검사대행,수입차 검사대행,세차,세차대행,교통안전공단">
+        <meta name="author" content="" />
+        <meta name="Version" content="2.0" />
+		<meta property="fb:app_id" content="1934179173460967" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="자동차검사대행 문의하기" />
+		<meta property="og:description" content="자동차검사대행 상담과 예약을 무료로 이용하세요." />
+		<meta property="og:image" content="" />
+		<meta property="og:image:width" content="200" />
+		<meta property="og:image:height" content="200" />
+		<meta property="og:url" content="https://m.motorman.co.kr" />
+		<meta property="og:site_name" content="m.motorman.co.kr" />
+		<meta property="site_name" content="m.motorman.co.kr" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="canonical" href="https://m.motomran.co.kr/index.html">
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<!-- Icons -->
+		<link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+		<!-- Slider -->
+		<link rel="stylesheet" href="css/tiny-slider.css"/>
+	<!-- Main Css -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" /><link href="css/colors/default.css" rel="stylesheet" type="text/css" id="theme-opt" />
+		<!-- MOTORMAN CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+
+    </head>
+
+    <body>
+        <!-- Loader -->
+        <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Loader -->
+
+		<!-- Navbar STart -->
+
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container">
+                <!-- Logo container-->
+					<a href="/index.html" class="logo">
+						<img src="/images/kmds-logo-dark.png" height="24" class="logo-light-mode" alt="">
+						<img src="/images/kmds-logo-light.png" height="24" class="logo-dark-mode" alt="">
+					</a>
+
+					<div class="menu-extras">
+						<div class="menu-item">
+							<!-- Mobile menu toggle-->
+							<a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+								<div class="lines">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</a>
+							<!-- End mobile menu toggle-->
+						</div>
+					</div>
+
+					<!--Login button Start-->
+					<!--
+					<ul class="buy-button list-inline mb-0">
+						<li class="list-inline-item ps-1 mb-0">
+							<a href="/p2020/orderTestReq.html">
+								<div class="btn btn-primary">예약하기</div>
+							</a>
+						</li>
+					</ul>
+					-->
+
+					<div class="btn-group buy-button list-inline mb-0" style="display: block;position: relative;margin: 0px 10px 26px 10px;height: 18px;" role="group">
+						<button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+							예약하기
+						</button>
+
+						<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+							<li><a class="dropdown-item" href="/p2020/orderTestReq.html"	style="line-height: 2;">검사대행예약</a></li>
+							<li><a class="dropdown-item" href="/p2020/p_visit.html"				style="line-height: 2;">검사소 찾기</a></li>
+						</ul>
+					</div>
+
+					<!--Login button End-->
+
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+                        <li><a href="/index.html" class="sub-menu-item">Home</a></li>
+                        <li><a href="/page-aboutus.html" class="sub-menu-item">KMDS</a></li>
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">자동차검사</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li>
+									<a href="/p2020/orderTestReq.html" class="sub-menu-item">
+										<span class="badge bg-primary"> 선결제할인 </span> 픽업&#38;딜리버리 예약
+									</a>
+								</li>
+                                <li>
+									<a href="/p2020/p_visit.html" class="sub-menu-item">
+										<span class="badge bg-primary"> 선결제할인 </span> 가까운 검사소 찾기
+									</a>
+								</li>
+                                <li>
+									<a href="tel:1577-0266" class="sub-menu-item">
+										<i class="mdi mdi-phone text-danger"></i> 1577-0266 전화문의 / 예약
+									</a>
+								</li>
+                                <li>
+									<a href="/p2020/p_find.html" class="sub-menu-item">예약확인·취소</a>
+								</li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">서비스</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="/page-forcompany.html" class="sub-menu-item">기업·법인고객</a></li>
+                                <li><a href="/page-forpersonal.html" class="sub-menu-item">개인고객</a></li>
+								<li><a href="/page-tagcloud.html" class="sub-menu-item">서비스 포트폴리오</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">커뮤니티</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="/page-blog.html" class="sub-menu-item">Blog</a></li>
+                                <li><a href="/page-faq.html" class="sub-menu-item">Faq</a></li>
+                                <li><a href="/page-contact.html" class="sub-menu-item">Contact</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="/page-reviews.html" class="sub-menu-item"><i class="mdi mdi-heart text-danger"></i>이용후기</a></li>
+
+					<li class="list-inline-item mb-0">	<a href="/page-login.html">		<img alt="네이버로그인" src="/images/icon/naver_square.png" class="me-1 mr-1" style="max-width:18px;">로그인	</a></li>
+
+
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+
+
+
+		<!-- Navbar End -->
+		<!-- Channel Plugin Scripts -->
+		<!-- Channel Plugin Scripts -->
+
+	<!-- 회원 정보 미연동			-->
+	<script>
+	  (function() {
+		var w = window;
+		if (w.ChannelIO) {
+		  return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+		}
+		var d = window.document;
+		var ch = function() {
+		  ch.c(arguments);
+		};
+		ch.q = [];
+		ch.c = function(args) {
+		  ch.q.push(args);
+		};
+		w.ChannelIO = ch;
+		function l() {
+		  if (w.ChannelIOInitialized) {
+			return;
+		  }
+		  w.ChannelIOInitialized = true;
+		  var s = document.createElement('script');
+		  s.type = 'text/javascript';
+		  s.async = true;
+		  s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+		  s.charset = 'UTF-8';
+		  var x = document.getElementsByTagName('script')[0];
+		  x.parentNode.insertBefore(s, x);
+		}
+		if (document.readyState === 'complete') {
+		  l();
+		} else if (window.attachEvent) {
+		  window.attachEvent('onload', l);
+		} else {
+		  window.addEventListener('DOMContentLoaded', l, false);
+		  window.addEventListener('load', l, false);
+		}
+	  })();
+	  ChannelIO('boot', {
+		"pluginKey": "bed69bdb-8df6-4b07-aca3-ed2ebb286346"
+	  });
+	</script>
+
+	<!-- 회원 정보 미연동			-->
+	<!-- End Channel Plugin -->
+		<!-- Channel Plugin Scripts -->
+
+		<section class="bg-half-170 bg-light d-table w-100">
+            <div class="container">
+                <div class="row mt-5 justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="pages-heading">
+                            <h4 class="title mb-0"> Contact Us </h4>
+                        </div>
+                    </div>  <!--end col-->
+                </div><!--end row-->
+
+                <div class="position-breadcrumb">
+                    <nav aria-label="breadcrumb" class="d-inline-block">
+                        <ul class="breadcrumb bg-white rounded shadow mb-0 px-4 py-2">
+                            <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0);">커뮤니티</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div> <!--end container-->
+        </section>
+
+        <!-- Shape Start -->
+        <div class="position-relative">
+            <div class="shape overflow-hidden text-white">
+                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!--Shape End-->
+
+
+        <!-- Start Contact -->
+        <section class="section">
+
+			<div class="container">
+                <div class="row my-6">
+                    <div class="col-lg-8">
+                        <div class="card">
+                            <div class="card-body py-3 border-bottom">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <h5 class="card-title mb-0">여기서 케이엠디에스와 연결하십시오</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body pt-3">
+                                <form id="submitReqForm" class="mt-4" method="post" action="#" role="form">
+                                    <div class="messages"></div>
+
+                                    <div class="controls">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group">
+                                                    <label for="form_name">이름 *</label>
+                                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="작성자의 이름을 입력해주세요 *" required="required" data-error="작성자의 이름을 입력해주세요">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group">
+                                                    <label for="form_lastname">연락받으실 전화번호 *</label>
+                                                    <input id="form_phone" type="phone" name="phone" class="form-control" placeholder="연락처를 입력해주세요 *" required="required" data-error="연락처를 입력해 주세요.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group">
+                                                    <label for="form_email">이메일 *</label>
+                                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="이메일을 입력해주세요 *" required="required" data-error="이메일 주소를 입력해주세요.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group">
+                                                    <label for="form_need">분류를 선택해주세요 *</label>
+                                                    <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                                        <option value="">선택하세요</option>
+                                                        <option value="개인고객 서비스 문의">개인고객 서비스 문의</option>
+                                                        <option value="기업고객 서비스 문의">기업고객 서비스 문의</option>
+                                                        <option value="제휴협력 문의">제휴협력 문의</option>
+                                                        <option value="기타">기타</option>
+                                                    </select>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="form_message">내용 *</label>
+                                                    <textarea id="form_message" name="message" class="form-control" placeholder="내용을 입력하세요 *" rows="4" required="required" data-error="문의또는 제안내용을 입력해주세요."></textarea>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+											<div class="p-4">
+												<div class="custom-control custom-switch">
+													<div class="form-group">
+														<input type="checkbox" class="custom-control-input" id="customSwitch1" onclick="agreeTerm.reqChk();">
+														<label class="custom-control-label" for="customSwitch1">문의사항 제출을 위해 이름, 메일, 연락처에 대한 개인정보를 제공하는데 동의합니다</label>
+													</div>
+												</div>
+											</div>
+                                            <div class="col-md-12">
+												<a herf="javascript:void(0)" class="btn btn-primary" id="submit_request">문의 접수하기</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="text-muted mt-3">
+                                                    <strong>*</strong> 표시는 필수입력항목입니다
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div id="faq-accordion" class="mb-5">
+                            <div class="card mb-2 mb-md-3">
+                                <a href="#accordion-1" data-bs-toggle="collapse" role="button" aria-expanded="false" class="p-3 p-md-4">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="mb-0 mr-2">자동차검사대행은 어떻게 진행됩니까?</h6>
+                                        <i class="las la-arrow-right icon"></i>
+                                    </div>
+                                </a>
+                                <div class="collapse" id="accordion-1" data-parent="#faq-accordion">
+                                    <div class="px-3 px-md-4 pb-3 pb-md-4">
+										고객님의 자동차가 주차되어 있는 위치로 지역별 담당매니저가 방문하여 차량을 픽업, 검사를 마친 후 고객님께 인계해드립니다.
+										<br />대행서비스는 전국 대부분이 가능합니다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-2 mb-md-3">
+                                <a href="#accordion-7" data-bs-toggle="collapse" role="button" aria-expanded="false" class="p-3 p-md-4">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="mb-0 mr-2">롯데렌터카·SK렌터카·삼성카드 렌트/리스자동차를 이용합니다</h6>
+                                        <i class="las la-arrow-right icon"></i>
+                                    </div>
+                                </a>
+                                <div class="collapse" id="accordion-7" data-parent="#faq-accordion">
+                                    <div class="px-3 px-md-4 pb-3 pb-md-4">
+										롯데렌터카·SK렌터카·삼성카드에서 렌트/리스를 이용하시는 고객님께서는 <a href="tel:1588-2899">1588-2899</a>로 요청하시면 <span class="badge bg-primary rounded mr-1">무료 검사대행</span>을 이용하실 수 있습니다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-2 mb-md-3">
+                                <a href="#accordion-5" data-bs-toggle="collapse" role="button" aria-expanded="false" class="p-3 p-md-4">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="mb-0 mr-2">한국교통안전공단 검사소에 예약을 했습니다. 대행이 가능합니까?</h6>
+                                        <i class="las la-arrow-right icon"></i>
+                                    </div>
+                                </a>
+                                <div class="collapse" id="accordion-5" data-parent="#faq-accordion">
+                                    <div class="px-3 px-md-4 pb-3 pb-md-4">
+										네. 한국교통안전공단 검사소에 예약을 하신 고객께서는 아래의 상담톡 또는 고객센터 <a href="tel:1577-0266">1577-0266</a> 으로 문의하여 딜리버리 서비스를 이용하세요.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-2 mb-md-3">
+                                <a href="#accordion-6" data-bs-toggle="collapse" role="button" aria-expanded="false" class="p-3 p-md-4">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="mb-0 mr-2">자동차검사대행은 검사소에 예약은 별도로 해야하나요?</h6>
+                                        <i class="las la-arrow-right icon"></i>
+                                    </div>
+                                </a>
+                                <div class="collapse" id="accordion-6" data-parent="#faq-accordion">
+                                    <div class="px-3 px-md-4 pb-3 pb-md-4">
+										<span>아닙니다. 검사대행 예약을 하시면 검사소에 별도로 예약을 하실 필요는 없습니다.</span>
+										<p>가까운 검사소예약 서비스를 이용하시면 검사소에 예약이 됩니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-2 mb-md-3">
+                                <a href="#accordion-2" data-bs-toggle="collapse" role="button" aria-expanded="false" class="p-3 p-md-4 collapsed">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="mb-0 mr-2">결제는 어떻게 하나요?</h6>
+                                        <i class="las la-arrow-right icon"></i>
+                                    </div>
+                                </a>
+                                <div class="collapse" id="accordion-2" data-parent="#faq-accordion" style="">
+                                    <div class="px-3 px-md-4 pb-3 pb-md-4">
+										<span>온라인서비스 신청시 온라인신용카드결제, 네이버페이, 카카오페이와 같은 간편결제, 실시간계좌치에 모두 가능합니다. </span>
+										<p>세금계산서 발행등으로 무통장입금이 필요하신 고객께서는 고객센터 1577-0266 또는 온라인 채팅으로 요청해주십시오.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-2 mb-md-3">
+                                <a href="#accordion-3" data-bs-toggle="collapse" role="button" aria-expanded="false" class="p-3 p-md-4">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="mb-0 mr-2">
+                                            자동차검사예약을 취소하고 싶습니다.
+                                        </h6>
+                                        <i class="las la-arrow-right icon"></i>
+                                    </div>
+                                </a>
+                                <div class="collapse" id="accordion-3" data-parent="#faq-accordion">
+                                    <div class="px-3 px-md-4 pb-3 pb-md-4">
+										네! 예약된 자동차검사를 취소하고자 할 때는 위약금 없이 전화 1577-0266 또는 서비스 변경/취소 메뉴를 통해서 하실 수 있습니다.<br />
+										온라인 예약을 통해 결제를 하신 경우에는 주문 취소와 함께 즉시 결제가 취소됩니다.<br />
+										주문 취소시에는 다른 고객분들을 위해 예정된 검사일시를 기준으로 최소 2시간 전까지는 취소의사를 고객센터나 주문조회메뉴를 통해 접수해주시기를 부탁드립니다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-2 mb-md-3">
+                                <a href="#accordion-4" data-bs-toggle="collapse" role="button" aria-expanded="false" class="p-3 p-md-4 collapsed">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="mb-0 mr-2">세금계산서를 발행하고 싶습니다</h6>
+                                        <i class="las la-arrow-right icon"></i>
+                                    </div>
+                                </a>
+                                <div class="collapse" id="accordion-4" data-parent="#faq-accordion">
+                                    <div class="px-3 px-md-4 pb-3 pb-md-4">
+										 법인카드로 결제시에는 별도의 세금계산서를 발행해드리지는 않습니다.<br />세금계산서가 필요하신 경우에는 고객센터(전화, 채팅)를 통해 요청을 해주시고, 신용카드에 대한 결제 영수증은 문자메세지 또는 메일로 발송해드립니다.<br />
+										무통장입금으로 결제하시는 경우에는 목적에 따라 소득공제 또는 지출증빙용 영수증을 문자메세지 또는 메일로 발송해드립니다.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-100 mt-60">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title mb-4 pb-2">
+                            <span class="badge badge-success rounded" data-aos="fade-up" data-aos-duration="1000">Features</span>
+                            <h4 class="title my-4" data-aos="fade-up" data-aos-duration="1400">우리와 소통하는 다른 방법</h4>
+                            <p class="text-muted para-desc mx-auto mb-0" data-aos="fade-up" data-aos-duration="1800"> <span class="text-primary font-weight-bold">고객님</span> 궁금하시거나 제안하고자 하는 이야기가 있습니까? 아래의 방법들 중 가장 선호하시는 방법을 이용해서 연결하실 수 있습니다.</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="catagories text-center p-4 rounded" data-aos="fade-up" data-aos-duration="1000">
+                            <img src="images/icon/chat.svg" class="avatar avatar-small mb-3" alt="">
+                            <h5><a href="#" class="badge badge-success"> 강추 </a> <a href="javascript:void(0)" class="text-dark OpenChat" id="OpenChat">실시간 채팅</a></h5>
+                            <p class="text-muted mb-0 mt-3">컴퓨터, 스마트폰을 이용해 상담원과 즉시 상담이 가능합니다. 퇴근 후 약속이 없는 직원이 업무시간 외에도 상담을 진행해드릴 수도 있습니다. 연락처를 남겨주시면 가능한 시간대에 상담을 진행해드립니다.</p>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="catagories text-center p-4 rounded" data-aos="fade-up" data-aos-duration="1300">
+                            <img src="images/icon/call.svg" class="avatar avatar-small mb-3" alt="">
+                            <h5><a href="#" class="badge badge-success"> 추천 </a> <a href="tel:1577-0266" class="text-dark" onclick="gtag('event', '전화클릭', {'event_category': '모바일전화연결','event_label': 'contact-middle'});">전화문의 1577-0266</a></h5>
+                            <p class="text-muted mb-0 mt-3">가장 많은 고객께서 이용하고 계신 방법이며, 이용고객이 많으시기 때문에 대기하실 수 있는 단점이 있습니다. 상담원의 목소리는 상냥할 수도 있고 거칠 수도 있음을 부디 양해바랍니다.</p>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="catagories text-center p-4 rounded" data-aos="fade-up" data-aos-duration="1600">
+                            <img src="images/icon/mail.svg" class="avatar avatar-small mb-3" alt="">
+                            <h5><a href="#" class="badge badge-success"> 추천 </a> <a href="./page-faq.html" class="text-dark">FAQ's</a></h5>
+                            <p class="text-muted mb-0 mt-3">많은 고객님께서 가장 자주 문의하시는 내용을 정리해두었습니다. 질문 전에 확인을 해보시는 것도 좋은 방법입니다. 지속적으로 업데이트가 될 수 있도록 많이 노력하고 있습니다.</p>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="catagories text-center p-4 rounded" data-aos="fade-up" data-aos-duration="">
+                            <img src="images/icon/customer-service.svg" class="avatar avatar-small mb-3" alt="">
+                            <h5><a href="javascript:void(0)" class="text-dark">Social</a></h5>
+                            <p class="text-muted mb-0 mt-3">운영하는 블로그, SNS를 통해 케이엠디에스와 연결하실 수 있습니다. 응대시간이 길어질 수 있는 단점이 있습니다.</p>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="catagories text-center p-4 rounded" data-aos="fade-up" data-aos-duration="1900">
+                            <img src="images/icon/user.svg" class="avatar avatar-small mb-3" alt="">
+                            <h5><a href="#" class="badge badge-secondary"> 진행중 </a> <a href="javascript:void(0)" class="text-dark">고객지원 포털</a></h5>
+                            <p class="text-muted mb-0 mt-3">서비스를 이용하신 고객을 대상으로 서비스를 제공할 계획입니다.</p>
+                            <p class="text-muted mb-0 mt-3">그 동안 고객님들께서 바라는 바를 남겨주신 내용을 토대로 만들어지고 있습니다.</p>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="catagories text-center p-4 rounded" data-aos="fade-up" data-aos-duration="2200">
+                            <img src="images/icon/writing.svg" class="avatar avatar-small mb-3" alt="">
+                            <h5><a href="#" class="badge badge-secondary"> 계획중 </a> <a href="javascript:void(0)" class="text-dark">1:1 고객지원</a></h5>
+                            <p class="text-muted mb-0 mt-3">서비스를 이용하신 고객을 대상으로 서비스를 제공할 계획입니다. 2020년 현재 여전히 계획을 가지고 있기만 한 상태입니다. 죄송합니다.</p>
+						</div>
+                    </div><!--end col-->
+
+                </div><!--end row-->
+            </div><!--end container-->
+		</section><!-- End contact -->
+
+        <!-- Footer Start -->
+		        <!-- Footer Start -->
+        <footer class="footer">
+            <!--<div class="d-none d-lg-block py-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <div class="section-title">
+                                <div class="d-flex">
+                                    <i class="uil uil-envelope-star display-4 text-white title-dark"></i>
+                                    <div class="flex-1 ms-md-4 ms-3">
+                                        <h5 class="fw-bold text-light title-dark mb-1">우리와 함께할 파트너를 모십니다</h5>
+                                        <p class="text-white-50 mb-0">
+											궁금하시거나 제안하실 내용이 있으시면 언제나 연락하세요. 우리는언제나 고객과 파트너에 열려 있습니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mt-4 mt-sm-0">
+                            <div class="text-md-end ms-5 ms-sm-0">
+                                <a href="/page-map.html" class="btn btn-primary">제휴·협력 요청</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>--><!--end div-->
+
+            <div class="container d-none d-lg-block">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-py-60 footer-border">
+                            <div class="row">
+                                <div class="col-lg-7 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                                    <a href="index.html" class="logo-footer">
+                                        <img src="/images/logo/kmds_white.png" height="24" alt="">
+                                    </a>
+                                    <p class="mt-4">우리는 고객이 믿을 수 있는 서비스를 안전하게 제공하고자 노력하고 있습니다.</p>
+									<p class="mt-2">
+									상호명 : 주식회사 케이엠디에스 |  <i class="mdi mdi-phone-classic"></i> 고객센터 1577-0266<br/>
+									사업자등록번호:  <a href="#none" class="text-reset" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=8878801103', 'bizCommPop', 'width=750, height=950;');return false;"><i class="mdi mdi-file-certificate-outline"></i> 887-88-01103</a> | 통신판매업신고: 2019-안양동안-1234<br />
+
+									경기도 안양시 동안구 벌말로 126, 3008호 (관양동, 평촌 오비즈타워)<br />대표이사: 정헌수 | 개인정보관리 책임: 박흥배이사 (hbpark@kmds.co.kr)</p>
+                                </div><!--end col-->
+
+                                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h5 class="footer-head">Company</h5>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li>
+											<a href="/page-aboutus.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> About us</a></li>
+                                        <li>
+											<a href="/page-reviews.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 이용후기</a></li>
+                                        <li>
+											<a href="/page-blog.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Blog</a></li>
+                                        <li>
+											<a href="/page-login.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Login</a></li>
+                                    </ul>
+                                </div><!--end col-->
+
+                                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h5 class="footer-head">Usefull Links</h5>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li><a href="/p2020/orderTestReq.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 자동차검사 대행예약</a></li>
+                                        <li><a href="/p2020/p_visit.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 가까운 자동차검사소 찾기</a></li>
+                                        <li><a href="/page-privacy.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 개인정보 처리방침</a></li>
+                                        <li><a href="/page-noticeservice.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 자동차검사안내 처리방침</a></li>
+                                    </ul>
+                                </div><!--end col-->
+
+                            </div><!--end row-->
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="footer-py-30 footer-bar">
+                <div class="container text-center">
+                    <div class="row align-items-center">
+                        <div class="col-sm-6">
+                            <div class="text-sm-start">
+                                <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> 케이엠디에스. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="https://m.motorman.co.kr/" target="javascript:void(0)" class="text-reset">kmds</a>, icon by <a href="https://icons8.kr/" target="_blank" class="text-reset">icons8.com</a>.</p>
+                            </div>
+                        </div><!--end col-->
+
+                        <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+							<!--
+							<ul class="list-unstyled text-sm-end mb-0">
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/master-card.png" class="avatar avatar-ex-sm" title="Master Card" alt=""></a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/visa.png" class="avatar avatar-ex-sm" title="Visa" alt=""></a></li>
+
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/paypal.png" class="avatar avatar-ex-sm" title="Paypal" alt=""></a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/american-ex.png" class="avatar avatar-ex-sm" title="American Express" alt=""></a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/discover.png" class="avatar avatar-ex-sm" title="Discover" alt=""></a></li>
+							</ul>-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </div>
+        </footer><!--end footer-->
+        <!-- Footer End -->
+
+
+        <!-- Footer End -->
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fs-5"><i data-feather="arrow-up" class="fea icon-sm icons align-middle"></i></a>
+        <!-- Back to top -->
+
+        <!-- Style switcher -->
+        <div id="style-switcher" class="bg-light border p-3 pt-2 pb-2" onclick="toggleSwitcher()">
+            <div>
+                <h6 class="title text-center">고객님의 취향</h6>
+                <ul class="pattern">
+                    <li class="list-inline-item">
+                        <a class="color1" href="javascript: void(0);" onclick="setColor('default')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color2" href="javascript: void(0);" onclick="setColor('green')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color3" href="javascript: void(0);" onclick="setColor('purple')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color4" href="javascript: void(0);" onclick="setColor('red')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color5" href="javascript: void(0);" onclick="setColor('skyblue')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color6" href="javascript: void(0);" onclick="setColor('skobleoff')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color7" href="javascript: void(0);" onclick="setColor('cyan')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color8" href="javascript: void(0);" onclick="setColor('slateblue')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color9" href="javascript: void(0);" onclick="setColor('yellow')"></a>
+                    </li>
+                </ul>
+
+                <h6 class="title text-center pt-3 mb-0 border-top">Theme Option</h6>
+                <ul class="text-center list-unstyled">
+                    <!--
+					<li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary rtl-version t-rtl-light mt-2" onclick="setTheme('style-rtl')">RTL</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary ltr-version t-ltr-light mt-2" onclick="setTheme('style')">LTR</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary dark-rtl-version t-rtl-dark mt-2" onclick="setTheme('style-dark-rtl')">RTL</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary dark-ltr-version t-ltr-dark mt-2" onclick="setTheme('style-dark')">LTR</a></li>
+                    -->
+					<li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-dark dark-version t-dark mt-2" onclick="setTheme('style-dark')">Dark</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-dark light-version t-light mt-2" onclick="setTheme('style')">Light</a></li>
+                </ul>
+				<!--
+                <h6 class="title text-center pt-3 mb-0 border-top">Admin</h6>
+                <ul class="text-center list-unstyled mb-0">
+                    <li><a href="javascript:void(0)" target="_blank" class="btn btn-sm btn-block btn-success mt-2">Admin Dashboard</a></li>
+                </ul>
+				-->
+            </div>
+            <div class="bottom">
+                <a href="javascript: void(0);" class="settings bg-white title-bg-dark shadow d-block"><i class="mdi mdi-cog ms-1 mdi-24px position-absolute mdi-spin text-primary"></i></a>
+            </div>
+        </div>
+        <!-- end Style switcher -->
+
+        <!-- MOTORMAN javascript -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+		<script src="js/motorman/main.js"></script>
+		<script src="js/motorman/common.js"></script>
+
+        <!-- javascript -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- SLIDER -->
+        <script src="js/tiny-slider.js "></script>
+        <!-- Icons -->
+        <script src="js/feather.min.js"></script>
+        <script src="js/unicons-monochrome.js"></script>
+
+        <!-- Switcher -->
+        <script src="js/switcher.js"></script>
+        <script src="js/motorman/setTheme.js"></script>
+
+        <!-- Main Js -->
+        <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+        <script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+
+        <!-- Contact -->
+        <script src="js/contact.js"></script>
+
+		<!-- MOTORMAN Js	-->
+		<!-- jquery.form.js : file upload에서 사용-->
+		<script src="js/motorman/jquery.form.js"></script>
+		<script src="js/motorman/submit_request.js"></script>
+
+
+        <!-- Main Js -->
+        <script src="js/app.js"></script>
+
+		<script>
+		$(document).ready(function() {
+		// Channel Plugin Scripts -->
+			$('.OpenChat').click(function(){
+				ChannelIO('show');
+				//ChannelIO('lounge');
+			});
+
+			ChannelIO('onShow', function() {
+				//alert("감사합니다");
+			});
+		// End Channel Plugin -->
+		});
+		</script>
+		<!-- End Channel Plugin -->
+
+		<!-- Modal Content Start -->
+		<div class="modal fade" id="req_confirmation-modal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content text-center">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalCenterTitle">Contact US</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body px-md-4 px-lg-5 pb-4 pb-lg-5">
+                        <img src="images/illustrator/Mobile_notification_SVG.svg" alt="">
+						<h5 class="h3" id="submit_title"></h5>
+						<div class="send">
+							<span id="submit_result"></span>
+						</div>
+					</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal Content End -->
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113408994-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113408994-1');
+</script>
+		<!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "s_3ee505a55f79";
+if(window.wcs) {
+wcs_do();
+}
+</script>		<!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+<script type="text/javascript" src="//wsa.mig-log.com/wsalog.js"> </script>
+<script type="text/javascript">
+wsa.inflow("m.motorman.co.kr");
+wsa_do(wsa);
+</script>    </body>
+</html>

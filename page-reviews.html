@@ -1,0 +1,607 @@
+
+<!DOCTYPE html>
+    <html lang="ko">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>자동차정비, 자동차검사를 대행하는 딜리버리 전문기업입니다.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="자동차검사대행이 필요하십니까? 혹은 내 주변의 자동차검사소를 비교해 보고 할인받아서 방문하세요." />
+        <meta name="keywords" content="자동차검사, 자동차검사대행, 검사대행, 자동차검사대행후기, 자동차검사 이용후기" />
+        <meta name="author" content="케이엠디에스" />
+        <meta name="Version" content="2.0" />
+		<!--Open Graph-->
+		<meta property="og:type"				content="website">
+		<meta property="og:title"				content="자동차검사예약 - 지역별 지정 자동차 검사소찾기">
+		<meta property="og:description"	content="자동차검사대행, 검사소에 할인받고 방문하고 싶을 땐!">
+		<meta property="og:image"			content="">
+		<meta property="og:url"				content="https://m.motorman.co.kr">
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="canonical" href="https://m.motomran.co.kr/index.html">
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<!-- Icons -->
+		<link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+		<!-- Slider -->
+		<link rel="stylesheet" href="css/tiny-slider.css"/>
+	<!-- Main Css -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" /><link href="css/colors/default.css" rel="stylesheet" type="text/css" id="theme-opt" />
+		<!-- MOTORMAN CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+    </head>
+
+    <body>
+		<!-- Channel Plugin Scripts -->
+		<!-- Channel Plugin Scripts -->
+
+	<!-- 회원 정보 미연동			-->
+	<script>
+	  (function() {
+		var w = window;
+		if (w.ChannelIO) {
+		  return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+		}
+		var d = window.document;
+		var ch = function() {
+		  ch.c(arguments);
+		};
+		ch.q = [];
+		ch.c = function(args) {
+		  ch.q.push(args);
+		};
+		w.ChannelIO = ch;
+		function l() {
+		  if (w.ChannelIOInitialized) {
+			return;
+		  }
+		  w.ChannelIOInitialized = true;
+		  var s = document.createElement('script');
+		  s.type = 'text/javascript';
+		  s.async = true;
+		  s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+		  s.charset = 'UTF-8';
+		  var x = document.getElementsByTagName('script')[0];
+		  x.parentNode.insertBefore(s, x);
+		}
+		if (document.readyState === 'complete') {
+		  l();
+		} else if (window.attachEvent) {
+		  window.attachEvent('onload', l);
+		} else {
+		  window.addEventListener('DOMContentLoaded', l, false);
+		  window.addEventListener('load', l, false);
+		}
+	  })();
+	  ChannelIO('boot', {
+		"pluginKey": "bed69bdb-8df6-4b07-aca3-ed2ebb286346"
+	  });
+	</script>
+
+	<!-- 회원 정보 미연동			-->
+	<!-- End Channel Plugin -->
+		<!-- Channel Plugin Scripts -->
+
+
+
+        <!-- Navbar STart -->
+
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container">
+                <!-- Logo container-->
+					<a href="/index.html" class="logo">
+						<img src="/images/kmds-logo-dark.png" height="24" class="logo-light-mode" alt="">
+						<img src="/images/kmds-logo-light.png" height="24" class="logo-dark-mode" alt="">
+					</a>
+
+					<div class="menu-extras">
+						<div class="menu-item">
+							<!-- Mobile menu toggle-->
+							<a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+								<div class="lines">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</a>
+							<!-- End mobile menu toggle-->
+						</div>
+					</div>
+
+					<!--Login button Start-->
+					<!--
+					<ul class="buy-button list-inline mb-0">
+						<li class="list-inline-item ps-1 mb-0">
+							<a href="/p2020/orderTestReq.html">
+								<div class="btn btn-primary">예약하기</div>
+							</a>
+						</li>
+					</ul>
+					-->
+
+					<div class="btn-group buy-button list-inline mb-0" style="display: block;position: relative;margin: 0px 10px 26px 10px;height: 18px;" role="group">
+						<button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+							예약하기
+						</button>
+
+						<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+							<li><a class="dropdown-item" href="/p2020/orderTestReq.html"	style="line-height: 2;">검사대행예약</a></li>
+							<li><a class="dropdown-item" href="/p2020/p_visit.html"				style="line-height: 2;">검사소 찾기</a></li>
+						</ul>
+					</div>
+
+					<!--Login button End-->
+
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+                        <li><a href="/index.html" class="sub-menu-item">Home</a></li>
+                        <li><a href="/page-aboutus.html" class="sub-menu-item">KMDS</a></li>
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">자동차검사</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li>
+									<a href="/p2020/orderTestReq.html" class="sub-menu-item">
+										<span class="badge bg-primary"> 선결제할인 </span> 픽업&#38;딜리버리 예약
+									</a>
+								</li>
+                                <li>
+									<a href="/p2020/p_visit.html" class="sub-menu-item">
+										<span class="badge bg-primary"> 선결제할인 </span> 가까운 검사소 찾기
+									</a>
+								</li>
+                                <li>
+									<a href="tel:1577-0266" class="sub-menu-item">
+										<i class="mdi mdi-phone text-danger"></i> 1577-0266 전화문의 / 예약
+									</a>
+								</li>
+                                <li>
+									<a href="/p2020/p_find.html" class="sub-menu-item">예약확인·취소</a>
+								</li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">서비스</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="/page-forcompany.html" class="sub-menu-item">기업·법인고객</a></li>
+                                <li><a href="/page-forpersonal.html" class="sub-menu-item">개인고객</a></li>
+								<li><a href="/page-tagcloud.html" class="sub-menu-item">서비스 포트폴리오</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">커뮤니티</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="/page-blog.html" class="sub-menu-item">Blog</a></li>
+                                <li><a href="/page-faq.html" class="sub-menu-item">Faq</a></li>
+                                <li><a href="/page-contact.html" class="sub-menu-item">Contact</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="/page-reviews.html" class="sub-menu-item"><i class="mdi mdi-heart text-danger"></i>이용후기</a></li>
+
+					<li class="list-inline-item mb-0">	<a href="/page-login.html">		<img alt="네이버로그인" src="/images/icon/naver_square.png" class="me-1 mr-1" style="max-width:18px;">로그인	</a></li>
+
+
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+
+
+
+        <!-- Navbar End -->
+        <!-- Hero Start -->
+        <section class="bg-half-170 d-table w-100" id="home">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-7">
+                        <div class="title-heading mt-4">
+                            <div class="alert alert-transparent alert-pills shadow" role="alert">
+                                <span class="badge rounded-pill bg-primary me-1">Notice</span>
+                                <span class="content">고객님이 참여해주신 이용후기를 그대로 보여드립니다</span>
+                            </div>
+
+                            <h1 class="heading mb-3">서비스 이용후기</h1>
+							<!--<span class="desc">
+								<p class="para-desc text-muted"><span class="text-primary font-weight-bold">우리는 서비스를 이용하신 모든 고객님께 서비스 이용에 대한 만족도조사를 실시하고 응답해주신 고객님들의 솔직한 평가를 있는 그대로 보여드리고 있습니다.</p>
+							</span>-->
+								<p class="para-desc text-muted d-none d-sm-block">우리의 서비스는 아이디어가 만들어지는 시간부터 제공된 서비스가 완료되기까지 모든 단계에서 <span class="text-primary font-weight-bold">고객만족</span> 을 위해서 설계됩니다. 서비스를 이용한 후 남겨주신 모든 조사 내용은 우리를 더욱 성장하게 만들 것을 알고 있습니다.</p>
+
+						</div>
+                        <div class="watch-video mt-4 pt-2">
+                            <a href="javascript:void(0)" class="btn btn-dark mb-2 mr-2 OpenChat">리뷰내용에 궁금한 것이 있습니까</a>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-5 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                        <img src="images/illustrator/services.svg" alt="">
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+        <!-- Shape Start -->
+        <div class="position-relative">
+            <div class="shape overflow-hidden text-white">
+                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!--Shape End-->
+
+        <!-- Loader -->
+
+		<div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div>
+
+		<!-- Loader -->
+
+        <!-- Blog STart -->
+        <section class="section pt-0">
+            <div class="container">
+                <div class="row">
+                    <!-- BLog Start -->
+                    <div class="col col-lg-8 col-md-8">
+                        <!-- Comment Areas start -->
+                        <div class="card rounded border mb-3">
+                            <div class="card-body">
+								<span class="widget-title">
+									<span class="h5 mb-2">이용고객설문:</span>
+									<p class="">서비스 이용 전반에서의 불만이나 추천/제안이 있다면 자유롭게 작성해주세요</p>
+								</h5>
+								<ul class="media-list list-unstyled mb-4 pb-2">
+
+
+										<li class="mt-4">		<div class="d-flex client-testi" style="cursor:unset";>			<img src="/images/ratio/ratio_5.jpg" class="img-fluid client-image avatar avatar-small rounded shadow" alt="">			<div class="flex-1 content p-3 shadow rounded bg-white position-relative">				<h6 class="text-muted mb-3">◯기운 매니저님 대행서비스</h6>				<ul class="list-unstyled mb-0 ">					<li class="list-inline-item">						<span class="badge bg-soft-secondary">현장업무 </span>					</li>					<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>				</ul>				<ul class="list-unstyled mb-0 ">					<li class="list-inline-item"><span class="badge bg-soft-secondary"> 고객센터 </span></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>				</ul>				<div class="mt-3">					<p class="text-muted alert p-3 bg-light rounded">					이용후기는 남기지 않으셨습니다.			</p>			<span class="text-primary small">- ◯◯로1821</span>			<span class="text-primary small">K3</span>			<ul class="list-unstyled d-flex justify-content-between border-top mt-3 pt-3 mb-0">				<li class="text-muted small">				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock fea icon-sm text-warning">					<circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>				</svg>				2022-06-23 09:20:10				</li>			</ul>		</div>	<li class="mt-4">		<div class="d-flex client-testi" style="cursor:unset";>			<img src="/images/ratio/ratio_5.jpg" class="img-fluid client-image avatar avatar-small rounded shadow" alt="">			<div class="flex-1 content p-3 shadow rounded bg-white position-relative">				<h6 class="text-muted mb-3">일성정비검사소 </h6>				<ul class="list-unstyled mb-0 ">					<li class="list-inline-item">						<span class="badge bg-soft-secondary">현장업무 </span>					</li>					<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>				</ul>				<ul class="list-unstyled mb-0 ">					<li class="list-inline-item"><span class="badge bg-soft-secondary"> 고객센터 </span></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>				</ul>				<div class="mt-3">					<p class="text-muted alert p-3 bg-light rounded">빨리 검사해주었고<br />
+상냥하게 대해주고 좋아 읍니다			</p>			<span class="text-primary small">- ◯◯루1346</span>			<span class="text-primary small">싼타페(SANTAFE)</span>			<ul class="list-unstyled d-flex justify-content-between border-top mt-3 pt-3 mb-0">				<li class="text-muted small">				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock fea icon-sm text-warning">					<circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>				</svg>				2022-06-22 18:05:08				</li>			</ul>		</div>	<li class="mt-4">		<div class="d-flex client-testi" style="cursor:unset";>			<img src="/images/ratio/ratio_3.jpg" class="img-fluid client-image avatar avatar-small rounded shadow" alt="">			<div class="flex-1 content p-3 shadow rounded bg-white position-relative">				<h6 class="text-muted mb-3">◯은영 매니저님 대행서비스</h6>				<ul class="list-unstyled mb-0 ">					<li class="list-inline-item">						<span class="badge bg-soft-secondary">현장업무 </span>					</li>					<li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-warning			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-warning			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-muted			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-muted			"></i></li>				</ul>				<ul class="list-unstyled mb-0 ">					<li class="list-inline-item"><span class="badge bg-soft-secondary"> 고객센터 </span></li>					<li class="list-inline-item"><i class="mdi mdi-star text-danger"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-muted			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-muted			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-muted			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-muted			"></i></li>				</ul>				<div class="mt-3">					<p class="text-muted alert p-3 bg-light rounded">이전에도 써비스신청한  적이 있었는데 그때는 직원도 친절하고 괜찮았었는데 약속시간 1시30분이나 늦게 오시고 점심시간이라는 말도 없이 계속기다리게 해 놓고 와서 한단 말이 점심시간이라 좀 늦었습니다라고 하는건 좀 그렇네요<br />
+사과를 했어야하는게 맞는것같은데			</p>			<span class="text-primary small">- ◯◯거5535</span>			<span class="text-primary small">엑스트렉</span>			<ul class="list-unstyled d-flex justify-content-between border-top mt-3 pt-3 mb-0">				<li class="text-muted small">				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock fea icon-sm text-warning">					<circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>				</svg>				2022-06-21 19:30:24				</li>			</ul>		</div>	<li class="mt-4">		<div class="d-flex client-testi" style="cursor:unset";>			<img src="/images/ratio/ratio_5.jpg" class="img-fluid client-image avatar avatar-small rounded shadow" alt="">			<div class="flex-1 content p-3 shadow rounded bg-white position-relative">				<h6 class="text-muted mb-3">(주)동우자동차공업사 </h6>				<ul class="list-unstyled mb-0 ">					<li class="list-inline-item">						<span class="badge bg-soft-secondary">현장업무 </span>					</li>					<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>				</ul>				<ul class="list-unstyled mb-0 ">					<li class="list-inline-item"><span class="badge bg-soft-secondary"> 고객센터 </span></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>				</ul>				<div class="mt-3">					<p class="text-muted alert p-3 bg-light rounded">친절하게 잘 해주셨습니다.			</p>			<span class="text-primary small">- ◯◯주2929</span>			<span class="text-primary small">니로 하이브리드</span>			<ul class="list-unstyled d-flex justify-content-between border-top mt-3 pt-3 mb-0">				<li class="text-muted small">				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock fea icon-sm text-warning">					<circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>				</svg>				2022-06-21 19:19:15				</li>			</ul>		</div>	<li class="mt-4">		<div class="d-flex client-testi" style="cursor:unset";>			<img src="/images/ratio/ratio_5.jpg" class="img-fluid client-image avatar avatar-small rounded shadow" alt="">			<div class="flex-1 content p-3 shadow rounded bg-white position-relative">				<h6 class="text-muted mb-3">◯호연 매니저님 대행서비스</h6>				<ul class="list-unstyled mb-0 ">					<li class="list-inline-item">						<span class="badge bg-soft-secondary">현장업무 </span>					</li>					<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>				</ul>				<ul class="list-unstyled mb-0 ">					<li class="list-inline-item"><span class="badge bg-soft-secondary"> 고객센터 </span></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>				</ul>				<div class="mt-3">					<p class="text-muted alert p-3 bg-light rounded">너무 친절하시네요.<br />
+주변에도 소개할께요			</p>			<span class="text-primary small">- ◯◯마7572</span>			<span class="text-primary small">스포티지</span>			<ul class="list-unstyled d-flex justify-content-between border-top mt-3 pt-3 mb-0">				<li class="text-muted small">				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock fea icon-sm text-warning">					<circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>				</svg>				2022-06-20 21:15:25				</li>			</ul>		</div>	<li class="mt-4">		<div class="d-flex client-testi" style="cursor:unset";>			<img src="/images/ratio/ratio_5.jpg" class="img-fluid client-image avatar avatar-small rounded shadow" alt="">			<div class="flex-1 content p-3 shadow rounded bg-white position-relative">				<h6 class="text-muted mb-3">◯현준 매니저님 대행서비스</h6>				<ul class="list-unstyled mb-0 ">					<li class="list-inline-item">						<span class="badge bg-soft-secondary">현장업무 </span>					</li>					<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>				</ul>				<ul class="list-unstyled mb-0 ">					<li class="list-inline-item"><span class="badge bg-soft-secondary"> 고객센터 </span></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>				</ul>				<div class="mt-3">					<p class="text-muted alert p-3 bg-light rounded">					이용후기는 남기지 않으셨습니다.			</p>			<span class="text-primary small">- ◯◯조5439</span>			<span class="text-primary small">BMW 520i</span>			<ul class="list-unstyled d-flex justify-content-between border-top mt-3 pt-3 mb-0">				<li class="text-muted small">				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock fea icon-sm text-warning">					<circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>				</svg>				2022-06-20 19:00:32				</li>			</ul>		</div>	<li class="mt-4">		<div class="d-flex client-testi" style="cursor:unset";>			<img src="/images/ratio/ratio_5.jpg" class="img-fluid client-image avatar avatar-small rounded shadow" alt="">			<div class="flex-1 content p-3 shadow rounded bg-white position-relative">				<h6 class="text-muted mb-3">(주)월평정비검사장 </h6>				<ul class="list-unstyled mb-0 ">					<li class="list-inline-item">						<span class="badge bg-soft-secondary">현장업무 </span>					</li>					<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>				</ul>				<ul class="list-unstyled mb-0 ">					<li class="list-inline-item"><span class="badge bg-soft-secondary"> 고객센터 </span></li>					<li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-warning			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-warning			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-muted			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-muted			"></i></li>				</ul>				<div class="mt-3">					<p class="text-muted alert p-3 bg-light rounded">인터넷 예약을 하고 갔는데 현장에서는 본인들은 예약 시스템이 없다며 사무실 접수 순서대로 검사 진행한다면서 사무실에 가서 다시 접수하고 기다렸습니다  사무실에는 인터넷 예약 내용이 있는데도 그렇게 처리하더군요. 직접 검사 담당했던 직원은 매우 친절하게 설명해주어 감사합니다. 칭찬해드리고 추천해드리고 싶습니다. 			</p>			<span class="text-primary small">- ◯◯소6686</span>			<span class="text-primary small">E300</span>			<ul class="list-unstyled d-flex justify-content-between border-top mt-3 pt-3 mb-0">				<li class="text-muted small">				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock fea icon-sm text-warning">					<circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>				</svg>				2022-06-19 22:03:07				</li>			</ul>		</div>	<li class="mt-4">		<div class="d-flex client-testi" style="cursor:unset";>			<img src="/images/ratio/ratio_4.jpg" class="img-fluid client-image avatar avatar-small rounded shadow" alt="">			<div class="flex-1 content p-3 shadow rounded bg-white position-relative">				<h6 class="text-muted mb-3">◯미숙 매니저님 대행서비스</h6>				<ul class="list-unstyled mb-0 ">					<li class="list-inline-item">						<span class="badge bg-soft-secondary">현장업무 </span>					</li>					<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-muted			"></i></li>				</ul>				<ul class="list-unstyled mb-0 ">					<li class="list-inline-item"><span class="badge bg-soft-secondary"> 고객센터 </span></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-muted			"></i></li>				</ul>				<div class="mt-3">					<p class="text-muted alert p-3 bg-light rounded">					이용후기는 남기지 않으셨습니다.			</p>			<span class="text-primary small">- ◯◯부3600</span>			<span class="text-primary small">G80</span>			<ul class="list-unstyled d-flex justify-content-between border-top mt-3 pt-3 mb-0">				<li class="text-muted small">				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock fea icon-sm text-warning">					<circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>				</svg>				2022-06-18 21:12:55				</li>			</ul>		</div>	<li class="mt-4">		<div class="d-flex client-testi" style="cursor:unset";>			<img src="/images/ratio/ratio_5.jpg" class="img-fluid client-image avatar avatar-small rounded shadow" alt="">			<div class="flex-1 content p-3 shadow rounded bg-white position-relative">				<h6 class="text-muted mb-3">대명자동차공업(주) </h6>				<ul class="list-unstyled mb-0 ">					<li class="list-inline-item">						<span class="badge bg-soft-secondary">현장업무 </span>					</li>					<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>				</ul>				<ul class="list-unstyled mb-0 ">					<li class="list-inline-item"><span class="badge bg-soft-secondary"> 고객센터 </span></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>				</ul>				<div class="mt-3">					<p class="text-muted alert p-3 bg-light rounded">					이용후기는 남기지 않으셨습니다.			</p>			<span class="text-primary small">- ◯◯나1636</span>			<span class="text-primary small">K5</span>			<ul class="list-unstyled d-flex justify-content-between border-top mt-3 pt-3 mb-0">				<li class="text-muted small">				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock fea icon-sm text-warning">					<circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>				</svg>				2022-06-17 19:00:43				</li>			</ul>		</div>	<li class="mt-4">		<div class="d-flex client-testi" style="cursor:unset";>			<img src="/images/ratio/ratio_5.jpg" class="img-fluid client-image avatar avatar-small rounded shadow" alt="">			<div class="flex-1 content p-3 shadow rounded bg-white position-relative">				<h6 class="text-muted mb-3">(주)성진정비 서김해지점 </h6>				<ul class="list-unstyled mb-0 ">					<li class="list-inline-item">						<span class="badge bg-soft-secondary">현장업무 </span>					</li>					<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>				</ul>				<ul class="list-unstyled mb-0 ">					<li class="list-inline-item"><span class="badge bg-soft-secondary"> 고객센터 </span></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>					<li class="list-inline-item"><i class="mdi mdi-star text-success			"></i></li>				</ul>				<div class="mt-3">					<p class="text-muted alert p-3 bg-light rounded">감사합니다.			</p>			<span class="text-primary small">- ◯◯서6573</span>			<span class="text-primary small">모닝</span>			<ul class="list-unstyled d-flex justify-content-between border-top mt-3 pt-3 mb-0">				<li class="text-muted small">				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock fea icon-sm text-warning">					<circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>				</svg>				2022-06-16 22:10:08				</li>			</ul>		</div>                                </ul>
+							</div>
+                        </div>
+
+							<!-- PAGINATION START -->
+						<div class="row">
+							<form class="form-inline" name="fsearch" action="/page-reviews.html" method="get" >
+								<div class="text-center px-auto">
+									<!-- STR : 페이징 -->
+									<ul class="pagination mb-0"><li class="page-item active"><a href="#" class="page-link pr-3 pl-3 pt-2 pb-2">1</a></li><li class="page-item"><a href="/page-reviews.html?page=2" data-ci-pagination-page="2" class="page-link pr-3 pl-3 pt-2 pb-2">2</a></li><li class="page-item"><a href="/page-reviews.html?page=3" data-ci-pagination-page="3" class="page-link pr-3 pl-3 pt-2 pb-2">3</a></li><li class="page-item"><a href="/page-reviews.html?page=4" data-ci-pagination-page="4" class="page-link pr-3 pl-3 pt-2 pb-2">4</a></li><li class="page-item"><a href="/page-reviews.html?page=5" data-ci-pagination-page="5" class="page-link pr-3 pl-3 pt-2 pb-2">5</a></li><li class="page-item"><a href="/page-reviews.html?page=6" data-ci-pagination-page="6" rel="next" class="page-link pr-3 pl-3 pt-2 pb-2" >&gt;</a></li><li class="page-item"><a href="/page-reviews.html?page=152" data-ci-pagination-page="맨끝 &rsaquo;"  class="page-link pr-3 pl-2 pt-2 pb-2">맨끝<!--&rsaquo;--></a></li></ul>									<!-- END : 페이징 -->
+								</div>
+							</form>
+						</div>
+
+						<!-- PAGINATION END -->
+
+						<div class="pull-left ml20">
+							<select name="listnum" class="form-control" onchange="location.href='/page-reviews.html?listnum=' + this.value';" style="display:none;" >
+							<option value="">선택</option>
+							<option value="10" selected="selected">10</option>
+							<option value="15" >15</option>
+							<option value="20" >20</option>
+							<option value="25" >25</option>
+							<option value="30" >30</option>
+							<option value="40" >40</option>
+							<option value="50" >50</option>
+							<option value="60" >60</option>
+							<option value="70" >70</option>
+							<option value="100" >100</option>
+							</select>
+						</div>
+
+                    </div>
+                    <!-- BLog End -->
+                    <!-- START SIDEBAR -->
+                    <div class="col col-lg-4 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 order-1 order-md-1">
+                        <div class="sidebar sticky-bar p-4 rounded shadow">
+
+							<div class="widget mb-4 pb-2">
+								<span class="widget-title">
+									<span class="h5 mb-4">고객 만족도</span>
+								</span>
+								<div class="d-flex mt-4 justify-content-between">
+									<ul class="list-unstyled text-end mb-0 ">
+										<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>
+										<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>
+										<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>
+										<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>
+										<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>
+									</ul>
+									<span> 매우만족</span>
+								</div>
+								<div class="d-flex justify-content-between">
+									<ul class="list-unstyled text-end mb-0 ">
+										<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>
+										<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>
+										<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>
+										<li class="list-inline-item"><i class="mdi mdi-star text-success"></i></li>
+										<li class="list-inline-item"><i class="mdi mdi-star text-light"></i></li>
+									</ul>
+									<span> 만족</span>
+								</div>
+								<div class="d-flex justify-content-between">
+									<ul class="list-unstyled text-end mb-0 ">
+										<li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+										<li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+										<li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+										<li class="list-inline-item"><i class="mdi mdi-star text-light"></i></li>
+										<li class="list-inline-item"><i class="mdi mdi-star text-light"></i></li>
+									</ul>
+									<span> 보통</span>
+								</div>
+								<div class="d-flex justify-content-between">
+									<ul class="list-unstyled text-end mb-0 ">
+										<li class="list-inline-item"><i class="mdi mdi-star text-danger"></i></li>
+										<li class="list-inline-item"><i class="mdi mdi-star text-danger"></i></li>
+										<li class="list-inline-item"><i class="mdi mdi-star text-light"></i></li>
+										<li class="list-inline-item"><i class="mdi mdi-star text-light"></i></li>
+										<li class="list-inline-item"><i class="mdi mdi-star text-light"></i></li>
+									</ul>
+									<span> 불만</span>
+								</div>
+								<div class="d-flex justify-content-between">
+									<ul class="list-unstyled text-end mb-0 ">
+										<li class="list-inline-item"><i class="mdi mdi-star text-danger"></i></li>
+										<li class="list-inline-item"><i class="mdi mdi-star text-light"></i></li>
+										<li class="list-inline-item"><i class="mdi mdi-star text-light"></i></li>
+										<li class="list-inline-item"><i class="mdi mdi-star text-light"></i></li>
+										<li class="list-inline-item"><i class="mdi mdi-star text-light"></i></li>
+									</ul>
+									<span> 매우불만</span>
+								</div>
+							</div>
+							<!-- CATAGORIES --><div class="widget mb-4 pb-2"><span class="widget-title"><span class="h5 mb-2">고객센터 만족도</span><ul class="list-unstyled mt-4 mb-0 blog-catagories"><li class="mb-2">	<div class="progress-box">		<h6 class="title text-muted">			<a href="jvascript:void(0)">매우만족</a>				<span class="float-right">82%(1249)</span>		</h6>		<div class="progress">			<div class="progress-bar position-relative bg-" style="width:82%;">		</div>	</div></div><!--end process box--></li><li class="mb-2">	<div class="progress-box">		<h6 class="title text-muted">			<a href="jvascript:void(0)">만족</a>				<span class="float-right">11%(173)</span>		</h6>		<div class="progress">			<div class="progress-bar position-relative bg-" style="width:11%;">		</div>	</div></div><!--end process box--></li><li class="mb-2">	<div class="progress-box">		<h6 class="title text-muted">			<a href="jvascript:void(0)">보통</a>				<span class="float-right">3%(46)</span>		</h6>		<div class="progress">			<div class="progress-bar position-relative bg-" style="width:3%;">		</div>	</div></div><!--end process box--></li><li class="mb-2">	<div class="progress-box">		<h6 class="title text-muted">			<a href="jvascript:void(0)">불만</a>				<span class="float-right">3%(46)</span>		</h6>		<div class="progress">			<div class="progress-bar position-relative bg-" style="width:3%;">		</div>	</div></div><!--end process box--></li><li class="mb-2">	<div class="progress-box">		<h6 class="title text-muted">			<a href="jvascript:void(0)">매우불만족</a>				<span class="float-right">0%(6)</span>		</h6>		<div class="progress">			<div class="progress-bar position-relative bg-" style="width:0%;">		</div>	</div></div><!--end process box--></li>	</ul>	</div>	<!-- CATAGORIES --><!-- CATAGORIES --><div class="widget mb-4 pb-2"><span class="widget-title"><span class="h5 mb-2">현장서비스 만족도</span><ul class="list-unstyled mt-4 mb-0 blog-catagories"><li class="mb-2">	<div class="progress-box">		<h6 class="title text-muted">			<a href="jvascript:void(0)">매우만족</a>				<span class="float-right">82%(1243)</span>		</h6>		<div class="progress">			<div class="progress-bar position-relative bg-" style="width:82%;">		</div>	</div></div><!--end process box--></li><li class="mb-2">	<div class="progress-box">		<h6 class="title text-muted">			<a href="jvascript:void(0)">만족</a>				<span class="float-right">10%(148)</span>		</h6>		<div class="progress">			<div class="progress-bar position-relative bg-" style="width:10%;">		</div>	</div></div><!--end process box--></li><li class="mb-2">	<div class="progress-box">		<h6 class="title text-muted">			<a href="jvascript:void(0)">보통</a>				<span class="float-right">4%(66)</span>		</h6>		<div class="progress">			<div class="progress-bar position-relative bg-" style="width:4%;">		</div>	</div></div><!--end process box--></li><li class="mb-2">	<div class="progress-box">		<h6 class="title text-muted">			<a href="jvascript:void(0)">불만</a>				<span class="float-right">3%(52)</span>		</h6>		<div class="progress">			<div class="progress-bar position-relative bg-" style="width:3%;">		</div>	</div></div><!--end process box--></li><li class="mb-2">	<div class="progress-box">		<h6 class="title text-muted">			<a href="jvascript:void(0)">매우불만족</a>				<span class="float-right">1%(8)</span>		</h6>		<div class="progress">			<div class="progress-bar position-relative bg-" style="width:1%;">		</div>	</div></div><!--end process box--></li>	</ul>	</div>	<!-- CATAGORIES -->                        </div>
+                    </div><!--end col-->
+                    <!-- END SIDEBAR -->
+
+                </div><!--end row-->
+            </div><!--end container-->
+
+        </section><!--end section-->
+        <!-- Blog End -->
+        <!-- Footer Start -->
+		        <!-- Footer Start -->
+        <footer class="footer">
+            <!--<div class="d-none d-lg-block py-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <div class="section-title">
+                                <div class="d-flex">
+                                    <i class="uil uil-envelope-star display-4 text-white title-dark"></i>
+                                    <div class="flex-1 ms-md-4 ms-3">
+                                        <h5 class="fw-bold text-light title-dark mb-1">우리와 함께할 파트너를 모십니다</h5>
+                                        <p class="text-white-50 mb-0">
+											궁금하시거나 제안하실 내용이 있으시면 언제나 연락하세요. 우리는언제나 고객과 파트너에 열려 있습니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mt-4 mt-sm-0">
+                            <div class="text-md-end ms-5 ms-sm-0">
+                                <a href="/page-map.html" class="btn btn-primary">제휴·협력 요청</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>--><!--end div-->
+
+            <div class="container d-none d-lg-block">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-py-60 footer-border">
+                            <div class="row">
+                                <div class="col-lg-7 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                                    <a href="index.html" class="logo-footer">
+                                        <img src="/images/logo/kmds_white.png" height="24" alt="">
+                                    </a>
+                                    <p class="mt-4">우리는 고객이 믿을 수 있는 서비스를 안전하게 제공하고자 노력하고 있습니다.</p>
+									<p class="mt-2">
+									상호명 : 주식회사 케이엠디에스 |  <i class="mdi mdi-phone-classic"></i> 고객센터 1577-0266<br/>
+									사업자등록번호:  <a href="#none" class="text-reset" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=8878801103', 'bizCommPop', 'width=750, height=950;');return false;"><i class="mdi mdi-file-certificate-outline"></i> 887-88-01103</a> | 통신판매업신고: 2019-안양동안-1234<br />
+
+									경기도 안양시 동안구 벌말로 126, 3008호 (관양동, 평촌 오비즈타워)<br />대표이사: 정헌수 | 개인정보관리 책임: 박흥배이사 (hbpark@kmds.co.kr)</p>
+                                </div><!--end col-->
+
+                                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h5 class="footer-head">Company</h5>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li>
+											<a href="/page-aboutus.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> About us</a></li>
+                                        <li>
+											<a href="/page-reviews.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 이용후기</a></li>
+                                        <li>
+											<a href="/page-blog.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Blog</a></li>
+                                        <li>
+											<a href="/page-login.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Login</a></li>
+                                    </ul>
+                                </div><!--end col-->
+
+                                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h5 class="footer-head">Usefull Links</h5>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li><a href="/p2020/orderTestReq.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 자동차검사 대행예약</a></li>
+                                        <li><a href="/p2020/p_visit.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 가까운 자동차검사소 찾기</a></li>
+                                        <li><a href="/page-privacy.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 개인정보 처리방침</a></li>
+                                        <li><a href="/page-noticeservice.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 자동차검사안내 처리방침</a></li>
+                                    </ul>
+                                </div><!--end col-->
+
+                            </div><!--end row-->
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="footer-py-30 footer-bar">
+                <div class="container text-center">
+                    <div class="row align-items-center">
+                        <div class="col-sm-6">
+                            <div class="text-sm-start">
+                                <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> 케이엠디에스. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="https://m.motorman.co.kr/" target="javascript:void(0)" class="text-reset">kmds</a>, icon by <a href="https://icons8.kr/" target="_blank" class="text-reset">icons8.com</a>.</p>
+                            </div>
+                        </div><!--end col-->
+
+                        <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+							<!--
+							<ul class="list-unstyled text-sm-end mb-0">
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/master-card.png" class="avatar avatar-ex-sm" title="Master Card" alt=""></a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/visa.png" class="avatar avatar-ex-sm" title="Visa" alt=""></a></li>
+
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/paypal.png" class="avatar avatar-ex-sm" title="Paypal" alt=""></a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/american-ex.png" class="avatar avatar-ex-sm" title="American Express" alt=""></a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/discover.png" class="avatar avatar-ex-sm" title="Discover" alt=""></a></li>
+							</ul>-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </div>
+        </footer><!--end footer-->
+        <!-- Footer End -->
+
+
+        <!-- Footer End -->
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fs-5"><i data-feather="arrow-up" class="fea icon-sm icons align-middle"></i></a>
+        <!-- Back to top -->
+
+        <!-- Style switcher -->
+        <div id="style-switcher" class="bg-light border p-3 pt-2 pb-2" onclick="toggleSwitcher()">
+            <div>
+                <h6 class="title text-center">고객님의 취향</h6>
+                <ul class="pattern">
+                    <li class="list-inline-item">
+                        <a class="color1" href="javascript: void(0);" onclick="setColor('default')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color2" href="javascript: void(0);" onclick="setColor('green')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color3" href="javascript: void(0);" onclick="setColor('purple')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color4" href="javascript: void(0);" onclick="setColor('red')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color5" href="javascript: void(0);" onclick="setColor('skyblue')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color6" href="javascript: void(0);" onclick="setColor('skobleoff')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color7" href="javascript: void(0);" onclick="setColor('cyan')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color8" href="javascript: void(0);" onclick="setColor('slateblue')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color9" href="javascript: void(0);" onclick="setColor('yellow')"></a>
+                    </li>
+                </ul>
+
+                <h6 class="title text-center pt-3 mb-0 border-top">Theme Option</h6>
+                <ul class="text-center list-unstyled">
+                    <!--
+					<li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary rtl-version t-rtl-light mt-2" onclick="setTheme('style-rtl')">RTL</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary ltr-version t-ltr-light mt-2" onclick="setTheme('style')">LTR</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary dark-rtl-version t-rtl-dark mt-2" onclick="setTheme('style-dark-rtl')">RTL</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary dark-ltr-version t-ltr-dark mt-2" onclick="setTheme('style-dark')">LTR</a></li>
+                    -->
+					<li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-dark dark-version t-dark mt-2" onclick="setTheme('style-dark')">Dark</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-dark light-version t-light mt-2" onclick="setTheme('style')">Light</a></li>
+                </ul>
+				<!--
+                <h6 class="title text-center pt-3 mb-0 border-top">Admin</h6>
+                <ul class="text-center list-unstyled mb-0">
+                    <li><a href="javascript:void(0)" target="_blank" class="btn btn-sm btn-block btn-success mt-2">Admin Dashboard</a></li>
+                </ul>
+				-->
+            </div>
+            <div class="bottom">
+                <a href="javascript: void(0);" class="settings bg-white title-bg-dark shadow d-block"><i class="mdi mdi-cog ms-1 mdi-24px position-absolute mdi-spin text-primary"></i></a>
+            </div>
+        </div>
+        <!-- end Style switcher -->
+
+        <!-- MOTORMAN javascript -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+		<!--<script src="js/motorman/main.js"></script>-->
+		<script src="js/motorman/common.js"></script>
+
+        <!-- javascript -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- SLIDER -->
+        <script src="js/tiny-slider.js "></script>
+        <!-- Icons -->
+        <script src="js/feather.min.js"></script>
+        <script src="js/unicons-monochrome.js"></script>
+
+        <!-- Switcher -->
+        <script src="js/switcher.js"></script>
+        <script src="js/motorman/setTheme.js"></script>
+
+        <!-- Main Js -->
+        <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+        <script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+
+
+		<!-- Channel Plugin Scripts -->
+		<script>
+		jQuery(document).ready( function(){
+
+
+			$('#OpenChat').click(function(){
+				$('.textLauncherIcon').trigger('click');
+			});
+
+
+			$('.OpenChat').click(function(){
+				$('.textLauncherIcon').trigger('click');
+			});
+
+			$('.OpenChat').click(function(){
+				ChannelIO('show');
+				//ChannelIO('lounge');
+			});
+		});
+		</script>
+		<!-- End Channel Plugin -->
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113408994-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113408994-1');
+</script>
+		<!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "s_3ee505a55f79";
+if(window.wcs) {
+wcs_do();
+}
+</script>		<!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+<script type="text/javascript" src="//wsa.mig-log.com/wsalog.js"> </script>
+<script type="text/javascript">
+wsa.inflow("m.motorman.co.kr");
+wsa_do(wsa);
+</script>    </body>
+</html>
