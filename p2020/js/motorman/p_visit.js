@@ -339,12 +339,12 @@ function Log(logStr) {
 	console.log(logStr);
 }
 
-var emailCheckStatus = "y";  //n : 사용중 / y : 사용가능/ v : 올바르지 않은 이메일/ b : 입력하지 않음  
-var carSizes = ["", "경형", "소형", "중형", "대형"];
-var selDate = "";
-var objPayPopup=null;
+let emailCheckStatus = "y";  //n : 사용중 / y : 사용가능/ v : 올바르지 않은 이메일/ b : 입력하지 않음
+let carSizes = ["", "경형", "소형", "중형", "대형"];
+let selDate = "";
+let objPayPopup=null;
 // ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-var agreeTerm = {
+let agreeTerm = {
 	//자동차검사정보 조회 동의
 	testInfoChk : function(){
 		if(!$('#testInfoSwitch').is(":checked")){ 
@@ -665,7 +665,7 @@ carInfo = {
 					//Notify.suc('OK');
 					//alert("검사소를 조회할 자동차 운행지역을 선택해 주세요.");
 
-					var offset = $("#testInfo").offset();
+					let offset = $("#testInfo").offset();
 					$('html, body').animate({scrollTop : offset.top-110}, 1200);
 				}
 			});
