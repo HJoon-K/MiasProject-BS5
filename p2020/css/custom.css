@@ -1,0 +1,180 @@
+/*! Place your custom styles here */
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+
+body {
+	font-family: Apple SD Gothic Neo,맑은 고딕,Malgun Gothic,돋움,dotum,sans-serif;
+}
+
+.bg-half-70 {
+  padding: 70px 0;
+  background-size: cover;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+  background-position: center center;
+}
+
+
+
+.bg-primary, .btn-primary, .btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.focus, .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-soft-primary:hover, .btn-soft-primary:focus, .btn-soft-primary:active, .btn-soft-primary.active, .btn-soft-primary.focus, .badge-primary, .pagination .page-item.active .page-link, .nav-pills .nav-link.active, .custom-control-input:checked ~ .custom-control-label::before, #preloader #status .spinner .double-bounce1, #preloader #status .spinner .double-bounce2, .social-icon li a:hover, .back-to-top:hover, .back-to-home a, #topnav .navbar-toggle.open span:hover, .gradient, .flex-control-paging li a.flex-active, .owl-theme .owl-dots .owl-dot span, .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots.clickable .owl-dot:hover span, .watch-video a .play-icon-circle, .sidebar .widget .tagcloud > a:hover, .flatpickr-day.selected, .flatpickr-day.selected:hover, .bg-animation-left.crypto-home::after, .classic-app-image .bg-app-shape::after, .classic-saas-image .bg-saas-shape::after, .work-container.work-modern .icons .work-icon:hover {
+    background-color: #42a5f5 !important;
+    border-color: #42a5f5 !important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.focus {
+    background-color: #1e95f5 !important;
+    border-color: #1e95f5 !important;
+}
+
+.work-process .step, .work-process .step-icon {
+    font-size: 45px;
+    opacity: 0.2;
+}
+
+.naver-login {
+    display: inline-block;
+    min-width: 264px;
+    min-height: 60px;
+	background-color: #00cd3c;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: "나눔 고딕","Apple Gothic",sans-serif;
+    color: #fff !important;
+    text-align: center;
+	border-radius: 3px;
+}
+
+.btn-naver {
+  background: #1ec800 !important;
+}
+
+/* p_test_req 주문페이지 결제방법 mobile UI 에서 margin 주기 */
+@media (max-width: 576px) {
+	.mb-xs-2 { margin-bottom: .5rem !important; }
+}
+
+/* cssgradient	*/
+.bg-cssgradient1 {
+ background: rgb(131,58,180);
+background: -moz-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1); 
+}
+
+.bg-cssgradient2 {
+background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+
+}
+
+
+/*
+.bg-cssgradient2 {
+	background: rgb(34,193,195);
+	background: -moz-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+	background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#fdbb2d",GradientType=1); 
+}
+*/
+
+/* p_test_req 주문페이지 선택된 결제방법의 배경색 */
+.bg-selected {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#066dab+0,c5deea+99 */
+	background: rgb(6,109,171); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(6,109,171,1) 0%, rgba(197,222,234,1) 99%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(6,109,171,1) 0%,rgba(197,222,234,1) 99%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(6,109,171,1) 0%,rgba(197,222,234,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#066dab', endColorstr='#c5deea',GradientType=0 ); /* IE6-9 */
+	background-image: linear-gradient(to bottom, #0661c9, #82bcff);
+}
+
+
+/* 회원 로그인시 주소입력의 항목의 스타일 조정 */
+.dropdown-item {
+    padding: .35rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+/* 날짜의 위와 아래부분에 이전, 다음버튼을 위치할 때 사용
+.dpifs-fake-input {
+	text-align:center;
+	padding: 1rem !important;
+	height: 86px;
+	font-size: 24px !important;
+	font-weight: 300;
+	line-height: 1.2;
+}
+*/
+
+.form-group .form-control .form-control-lg {
+    height: calc(1.5em + 1rem + 2px);
+    padding: .5rem 1rem;
+        padding-left: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+}
+
+/*날짜의 왼쪽, 오른쪽에 이전, 다음버튼을 위치시킬 때 사용*/
+.dpifs-fake-input {
+-webkit-box-shadow: none;
+box-shadow: none;
+text-align:center;
+background-color: #ffffff;
+border: 1px solid #dee2e6;
+color: #3c4858;
+height: 42px;
+font-size: 13px;
+position: relative;
+-ms-flex: 1 1 0%;
+flex: 1 1 0%;
+min-width: 0;
+margin-bottom: 0;
+border-radius: 0px;
+-webkit-transition: all 0.5s ease;
+transition: all 0.5s ease;
+}
+
+.alert_delivery {
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.alert_delivery .alert-success {
+    background-color: rgba(46, 202, 139, 0.9);
+    color: #ffffff;
+    border-color: #2eca8b;
+}
+
+.footer {
+    padding: 30px 0;
+}
+
+.form-group .form-control {
+    font-size: 16px;
+}
+
+.form-group .small {
+	font-size: 80%;
+}
+
+.position-breadcrumb {
+    position: absolute;
+    top: 100%;
+    right: 12px;
+    left: 12px;
+    transform: translateY(-50%);
+    text-align: center;
+    z-index: 1;
+}
