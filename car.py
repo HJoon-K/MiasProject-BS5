@@ -2,15 +2,17 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
 
 
 URL = 'https://www.cyberts.kr/cp/pvr/cpr/readCpPvrCarPrsecResveMainView.do'
 
-#options = Options() # 옵션을 조정하기 위한셋팅
+options = Options() # 옵션을 조정하기 위한셋팅
 #options.add_argument('--blink-settings=imagesEnabled=false') # 이미지 로딩안하게 옵션셋팅
+options.add_argument('headless') #headless모드 브라우저가 뜨지 않고 실행됩니다.
 
 chrome_options = webdriver.ChromeOptions()
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
 #driver.implicitly_wait(time_to_wait=5) # 로딩대기 (암묵적) 최대 5초까지
 
