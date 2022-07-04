@@ -31,7 +31,7 @@ while a <= 15 :
         div1 = driver.find_element(By.XPATH,
                                    "/html/body/div[5]/main/div[3]/div[1]/div/div/div/div[2]/div[1]/div[2]/nav/ul")
         res1 = len(div1.find_elements(By.TAG_NAME, 'li'))
-        res1 = (res1)
+        res1 = (res1) 
 
         div2 = driver.find_element(By.XPATH, "/html/body/div[5]/main/div[3]/div[1]/div/div/div/div[2]/div[1]/div[2]")
         res2 = len(div2.find_elements(By.TAG_NAME, 'input'))
