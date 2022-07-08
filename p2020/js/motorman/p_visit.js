@@ -690,6 +690,8 @@ carInfo = {
 			success : function(data) {
 				$('body').loading('stop');
 
+                data.code = 0; // test 구문
+
 				if(data.code == 0){
 					$('#h_ttype').val(data.result.ttype);
 					$('#h_nox_yn').val(data.result.nox_yn);
@@ -703,7 +705,8 @@ carInfo = {
 					}
 
 					$('#startdate').val(data.result.fvdt);
-					$('#enddate').val(data.result.tvdt);
+					$('#enddate').val('20220801');              // test 구문
+					// $('#enddate').val(data.result.tvdt);
 					$('#expdate').val(data.result.middate);
 					//$('#h_cost1').val(data.result.cost1);
 
@@ -1167,147 +1170,10 @@ carInfo = {
 
 },
 // ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-schedule = {
-	/*	
-	openSchAgent: function(){
-		var vSido					= $('#sido').val().split(" ").join("");
-		var vGugun				= $('#gugun').val().split(" ").join("");
-		var vDong					= $('#dong').val().split(" ").join("");
-		var vAcode					= $('#h_acode').val().split(" ").join("");
-		var vCarmaker_type		= $('#h_car_maker_type').val();		//국산수입구분
-		var vConditionLayer		=	1;											//필수값 체크 후 검사희망일레이어 띄우기 여부 
 
-		if (vAcode == '' || vSido==''){
-			alert("자동차 위치 정보를 먼저 등록해 주시기 바랍니다.");
-			var offset = $("#locationInfo").offset();
-			$('html, body').animate({scrollTop : offset.top-120}, 1200);
-			return;
-		}
-
-		if($('#h_ttype').val() =='') {
-			alert("검사정보가 없습니다.\n\n조회를 하신 후 이용해주시기 바랍니다.");
-			var offset = $("#testInfo").offset();
-			$('html, body').animate({scrollTop : offset.top-120}, 1200);
-			return;
-		}
-
-		if($('#h_car_maker_type').val() =='') {
-
-			alert("자동차모델을 선택해야 합니다.\n\n조회를 하신 후 이용해주시기 바랍니다.");
-			return;
-		}
-
-
-
-		$('#txtSch_sido').val(vSido);
-		$('#txtSch_gugun').val(vGugun);
-		$('#txtSch_dong').val(vDong);
-		$('#txtSch_address').val(vSido+' '+vGugun+' '+vDong);
-		selDate = $('#h_today').val();	//검사예약이 가능한 날짜 (today+환경설정:1일)
-		$('#hopeSchDate').val(selDate);
-
-		if($('#hopeSchDate').val(	) >= $('#test_enddate').val() ) {
-			if($('#ttype_title').val() == '정기검사' ) {
-				alert('예약가능한 날짜가 검사기간을 경과하여 검사종류가 변경될 수 있습니다.\n계속해서 접수를 원하시면 고객센터 1577-0266 을 통해서 접수를 진행해주세요.');
-				$('#btnCloseScheduleAgent').trigger('click');
-				return false;
-			}
-		}
-		
-		$('#scheduleAgentLayer').modal('toggle');
-
-		schedule.callSchData('/p2020/data.html?act=schagent&ac=' + vAcode, selDate, vAcode, 0, vCarmaker_type);
-
-		$('#hopeSchDate').datepickerInFullscreen({
-			// Options
-			touchSwipe				:   true,
-			effect							:   '3', // 1 or 2 or 3 or 5 or 6 up to 16
-			blockScroll					:   true,
-			closeOnChange			:   true,
-			format						:   'YYYY-MM-DD', // YYYY-MM-DD
-			additionalTarget			:   '',
-			additionalTargetFormat	:   'YYYY-MM-DD',
-			fakeInput					:	true,
-			fakeInputFormat			:   'YYYY-MM-DD',
-			todayWord					:   '오늘',
-			clearWord					:   '삭제',
-			closeWord					:   '닫기',
-			// Datepicker options
-			datepicker					:	{
-													calendarWeeks				:   true,
-													datesDisabled				:   [0],
-													daysOfWeekDisabled		:   [],
-													daysOfWeekHighlighted	:   [],
-													startDate						:   -Infinity,
-													endDate							:   Infinity,
-													maxViewMode				:   2, // centuries
-													minViewMode					:   0, // days
-													startView						:   0, // days
-													language						:   'ko',
-													templates						:   {
-														leftArrow: '«',
-														rightArrow: '»'
-													},
-													title							:  '',
-													todayHighlight				:  false,
-													weekStart					:  0, // sunday
-			},
- 
-			// Events
-			beforeOpen				: function(modal, settings) {},
-			beforeClose				: function(modal, settings) {},
-			onChange					: function(modal, settings){
-				selDate = $('#hopeSchDate').val();
-				alert (selDate);
-
-				//시작 접수일 기준으로 각 상황에 따라 메세지를 보여주기 위해 추가 2018-04-19 박흥배
-				var today = new Date();
-				var dd = today.getDate();
-				var mm = today.getMonth()+1; //January is 0!
-				var yyyy = today.getFullYear();
-
-				if(dd<10) {
-					dd='0'+dd;
-				} 
-				if(mm<10) {
-					mm='0'+mm;
-				} 
-				today = yyyy+'-'+mm+'-'+dd;
-				if ($('#test_enddate').val() < today) {
-				} else {
-					if(selDate > $('#test_enddate').val() ) {
-						if($('#ttype_title').val() == '정기검사' ) {
-							alert('선택한 예약일은 최종만료일을 경과하여 검사종류가 변경될 수 있습니다.\n다른 날짜를 선택하시거나 선택하신 날짜로 예약을 원하시면 고객센터 1577-0266 에서 접수를 진행해주세요.');
-							$('#btnCloseScheduleAgent').trigger('click');
-							return false;
-						} //else {
-							//alert('선택한 예약일은 최종만료일을 경과합니다.\n계속 진행을 원하시면 확인버튼을 클릭해서 진행하세요.');
-						//}
-					}	//else if(selDate == $('#test_enddate').val() ) {
-						//	alert('선택한 예약일은 최종만료일입니다.\n계속 진행을 원하시면 고객센터 1577-0266으로 문의 후 표시된 메세지로 상담을 해주십시오.');
-						//	return false;
-					//}
-					//alert ('희망예약일Layer Open > 달력 희망일 선택, CarCode '+vCarCode);
-				}
-				// 종료 접수일 기준으로 각 상황에 따라 메세지를 보여주기 위해 추가 2018-04-19 박흥배
-
-				vAcode = $('#h_acode').val().split(" ").join("");
-				schedule.callSchData('/p2020/data.html?act=schConstractors', selDate, vAcode, start_x, start_y, h_ttype, ttype_title, h_carsize, carno);
-			}
-
- 
-    }); 
-
-
-
-
-
-
-	},
-	*/
 
 	// 주문서에서 검사예약일 선택
-	openSchConstractors: function(){
+	openSchConstractors : function() {
 
 		var vSido					=	$('#sido').val().split(" ").join("");
 		var vGugun				=	$('#gugun').val().split(" ").join("");
@@ -1541,113 +1407,6 @@ schedule = {
 		}); 
 		
 		
-		/*
-		//Flatpickr
-		var today = new Date();
-		var tomorrow = new Date();
-		tomorrow.setDate(today.getDate() + 1);
-		$("#hopeSchDate").flatpickr({
-			defaultDate	:today,
-			minDate		: new Date().fp_incr($('#h_rv_scnt').val()), // 14 days from now
-			maxDate		: new Date().fp_incr($('#h_rv_ecnt').val()), // 한달일 경우 +1m 
-			disable: disabledDays,
-			locale: "ko",
-			altInput: true,
-			altFormat: "Y-m-d",
-			dateFormat: "Y-m-d",
-			onChange: function(selectedDates, dateText, instance) {
-				selDate = dateText;
-
-				//시작 접수일 기준으로 각 상황에 따라 메세지를 보여주기 위해 추가 2018-04-19 박흥배
-				var today = new Date();
-				var dd = today.getDate();
-				var mm = today.getMonth()+1; //January is 0!
-				var yyyy = today.getFullYear();
-
-				if(dd<10) {
-					dd='0'+dd;
-				} 
-				if(mm<10) {
-					mm='0'+mm;
-				} 
-				today = yyyy+'-'+mm+'-'+dd;
-				if ($('#test_enddate').val() < today) {
-				} else {
-					if(selDate > $('#test_enddate').val() ) {
-						if($('#ttype_title').val() == '정기검사' ) {
-							alert('선택한 예약일' + selDate +' 은 최종만료일' +$('#test_enddate').val()+' 을 경과하여 검사종류가 변경될 수 있습니다.\n다른 날짜를 선택하시거나 선택하신 날짜로 예약을 원하시면 고객센터 1577-0266 에서 접수를 진행해주세요.');
-							$('#btnCloseScheduleAgent').trigger('click');
-							return false;
-						} //else {
-							//alert('선택한 예약일은 최종만료일을 경과합니다.\n계속 진행을 원하시면 확인버튼을 클릭해서 진행하세요.');
-						//}
-					}	//else if(selDate == $('#test_enddate').val() ) {
-						//	alert('선택한 예약일은 최종만료일입니다.\n계속 진행을 원하시면 고객센터 1577-0266으로 문의 후 표시된 메세지로 상담을 해주십시오.');
-						//	return false;
-					//}
-					//alert ('희망예약일Layer Open > 달력 희망일 선택, CarCode '+vCarCode);
-				}
-				// 종료 접수일 기준으로 각 상황에 따라 메세지를 보여주기 위해 추가 2018-04-19 박흥배
-
-				vAcode = $('#h_acode').val().split(" ").join("");
-				schedule.callSchData('/p2020/data.html?act=schConstractors', dateText, vAcode, start_x, start_y, h_ttype, h_carsize);
-				}
-		});
-		*/
-
-		/*
-		$('.date-pick2').datepicker({
-			dateFormat: "yy-mm-dd",
-			dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
-			monthNames : ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
-			monthNamesShort : ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
-			//showOn: "both",
-			//buttonImage: '',
-			//buttonImageOnly: false,
-			minDate: ('+' + $('#h_rv_scnt').val()),
-			maxDate: ('+' + $('#h_rv_ecnt').val()),	// 한달일 경우 +1m 
-			beforeShowDay: schedule.disableAllTheseDays,
-			onSelect: function(dateText, inst) {
-				selDate = dateText;
-
-				//시작 접수일 기준으로 각 상황에 따라 메세지를 보여주기 위해 추가 2018-04-19 박흥배
-				var today = new Date();
-				var dd = today.getDate();
-				var mm = today.getMonth()+1; //January is 0!
-				var yyyy = today.getFullYear();
-
-				if(dd<10) {
-					dd='0'+dd;
-				} 
-				if(mm<10) {
-					mm='0'+mm;
-				} 
-				today = yyyy+'-'+mm+'-'+dd;
-				if ($('#test_enddate').val() < today) {
-				} else {
-					if(selDate > $('#test_enddate').val() ) {
-						if($('#ttype_title').val() == '정기검사' ) {
-							alert('선택한 예약일은 최종만료일을 경과하여 검사종류가 변경될 수 있습니다.\n다른 날짜를 선택하시거나 선택하신 날짜로 예약을 원하시면 고객센터 1577-0266 에서 접수를 진행해주세요.');
-							$('#btnCloseScheduleAgent').trigger('click');
-							return false;
-						} //else {
-							//alert('선택한 예약일은 최종만료일을 경과합니다.\n계속 진행을 원하시면 확인버튼을 클릭해서 진행하세요.');
-						//}
-					}	//else if(selDate == $('#test_enddate').val() ) {
-						//	alert('선택한 예약일은 최종만료일입니다.\n계속 진행을 원하시면 고객센터 1577-0266으로 문의 후 표시된 메세지로 상담을 해주십시오.');
-						//	return false;
-					//}
-					//alert ('희망예약일Layer Open > 달력 희망일 선택, CarCode '+vCarCode);
-				}
-				// 종료 접수일 기준으로 각 상황에 따라 메세지를 보여주기 위해 추가 2018-04-19 박흥배
-
-				vAcode = $('#h_acode').val().split(" ").join("");
-				schedule.callSchData('/p2020/data.html?act=schConstractors', dateText, vAcode, start_x, start_y, h_ttype, h_carsize);
-			}
-		});
-		*/
-
-	},
 
 
 	callSchData: function(v_url, v_test_startdate, v_test_enddate, v_date, v_code, start_x, start_y, test_type, ttype_title, car_class, carno, nox_yn, gsTypeCode, gsTypeName) {

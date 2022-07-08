@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- 검사소&예약일 -->
+                            <div class="custom-form p-4 rounded border  mt-5">
+                                <div class="row" id="tsinfo_schedule">
+                                    <div class="col-lg-12">
+                                        <div class="mb-3">
+                                        <a href="javascript:void(0)"
+                                            class="btn btn-primary shadow-none w-100"
+                                            id="btnschdate"
+                                            style="font-size: 13px"><i class="bi bi-search" style="font-size: 14px;"></i> 가까운 검사소 찾기 </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12" id="tsinfo_schedule_detail" style="display:block;">
+                                        <div class="mb-3">
+                                            <label class="form-label" for="schdate"><span class="text-danger mr-1 me-1">*</span>방문할 예약일</label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" placeholder="" id="schdate" name="schdate" required=""readonly="" class="form-control bg-light" aria-describedby="btnschdate">
+                                                <div class="input-group-append">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="form-group position-relative">
+                                                <label class="form-label"><span class="text-danger mr-1 me-1">*</span>방문일시</label>
+                                                <div class="form-icon position-relative">
+                                                <i data-feather="clock" class="fea icon-sm icons"></i>
+                                                <input type="text" class="form-control pl-5  bg-light" placeholder=""  id="schtime_t" name="schtime_t" required=""readonly="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="form-group position-relative">
+                                                <label  class="form-label"><span class="text-danger mr-1 me-1">*</span> 방문할 검사소											</label>
+                                                <div class="form-icon position-relative">
+                                                <i data-feather="home" class="fea icon-sm icons"></i>
+                                                <input type="text" class="form-control pl-5  bg-light" placeholder=""  id="conname" name="conname" required=""readonly="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-0">
+                                            <div class="form-group position-relative mb-0">
+                                                <label class="text-danger"> * 검사소 조회 후 방문예약을 하시면 예약내역이 메세지로 발송됩니다. 아래의 "예약확인 휴대전화번호"를 정확히 입력해주세요.
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <input type="hidden" placeholder="대행 매니저 :"  id="cuname" name="cuname" readonly>
+                                    </div>
+                                </div>
+                            </div><!-- 검사소&예약일 END -->
+
+
+<div class="container">
+  <h2>Activate Modal with JavaScript</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" id="myBtn">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+          <input type="hidden" name="bookId" id="bookId" value="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="custom-form p-4 rounded border  mt-5" id="result_ts" style="">
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card overflow-hidden border-0">
+            <div class="card-body p-0">
+                <ul class="list-unstyled d-flex justify-content-between mb-0">
+                    <li><a href="javascript:void(0)" class="title h6 text-dark">자동차</a></li>
+                    <li class="h6 mb-0 jobs" id="tsresult_car_name">자동차명</li>
+                </ul>
+                <ul class="list-unstyled d-flex justify-content-between mb-0">
+                    <li><a href="javascript:void(0)" class="title h6 text-dark">검사종류</a></li>
+                    <li class="h6 mb-0 jobs" id="tsresult_test_type">검사종류</li>
+                </ul>
+                <ul class="list-unstyled d-flex justify-content-between mb-0">
+                    <li><a href="javascript:void(0)" class="title h6 text-dark">검사만료일</a></li>
+                    <li class="h6 mb-0 jobs" id="tsresult_exp_date">검사만료일</li>
+                </ul>
+                <!--
+                <ul class="list-unstyled d-flex justify-content-between mt-2 mb-2 border-bottom">
+                </ul>
+                <ul class="list-unstyled d-flex justify-content-between mb-0">
+                    <li><a href="javascript:void(0)" class="title h6 text-danger">합계 (부가세 포함)</a></li>
+                    <li class="h6 mb-0 jobs text-danger" id="tsresult_payment">합계</li>
+                </ul>
+                -->
+            </div>
+        </div>
+    </div>
+</div><!-- 자동차검사 기초정보 end row-->
+
+<script>
+$(document).ready(function(){
+  $("#myBtn").click(function(){
+    $('.modal-body p').html('ffdsffsdf');
+    $("#myModal").modal();
+  });
+});
+</script>
+
+</body>
+</html>
